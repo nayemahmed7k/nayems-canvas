@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nayem's Canvas</title>
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="/resources/pagesStyles.css">
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <script src="/script.js"></script>
+        <script src="/resources/pagesScript.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>Nayem's Canvas</h1>
+            <p>Logo</p>
+        </header>
+
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/pages/aboutMe.html">About</a>
+            <a href="/pages/contact.html">Contact</a>
+        </nav>
+
+        <div style="margin: 0 10px; ">
+            <h3>Text Transformation and Styling</h3>
+            <ol>
+                <li>
+                    <p>You can transform texts/paragraph into any form, for example Uppercase, Lowercase or Capitalize</p>
+                    <p id="ttest1" class="examples">Hey! my dear friend, look at me</p>
+                    <p>
+                    Try :
+                    <button onclick="ttest(0)" id="b1">Uppercase</button>
+                    <button onclick="ttest(1)" id="b2">Lowercase</button>
+                    <button onclick="ttest(2)" id="b3">Capitalize</button>
+                    </p>
+                </li>
+                <li>
+                    <p>Example of Text Indentation:</p>
+                    <div class="examples">
+                        <p id="ttest2">This paragraph is started with four blank space, This mean that we have used text indentation. To use text indentation, simply use 'CSS : text-indent' property and that's it.</p>
+                    </div>
+                </li>
+                <li>
+                    <p>Example of Letter and Word Spacing</p>
+                    <div class="examples">
+                        <p id="ttest3">a. Each of the words below has 5 pixel of letter spacing.</p>
+                        <p id="ttest3-1">b. Did you notice the distance between every word is around 10 pixel</p>
+                    </div>
+                </li>
+                <li>
+                    <p>Example of Line Height</p>
+                    <div class="examples">
+                        <p id="ttest4">In this example you can see that there is a desired distance is maintained between each lines. Well! You got it. We can use line height property in points. Such as 0.5, 1.0, 1.5 etc</p>
+                    </div>
+                </li>
+                <li>
+                    <p>Example of White Space</p>
+                    <div class="examples">
+                            <p id="ttest5">
+                                Can you guess what is white-space? Lets dig in! White space property has two value. They are 'wrap' and 'no-wrap'. You will can check both of this property by yourself. All you need to push the buttons below.
+                            </p>
+                            <button onclick="wrapped(0)">No Wrap</button>
+                            <button onclick="wrapped(1)">Wrap</button>
+                    </div>
+                </li>
+                <li>
+                    <p>Finnaly we can apply text shadows to make texts looks more interesting</p>
+                    <div class="examples">
+                        <p id="ttest6">
+                            This is a Example
+                        </p>
+                        <button onclick="shadow(0)">Red</button>
+                        <button onclick="shadow(1)">Green</button>
+                        <button onclick="shadow(2)">Blue</button>
+                    </div>
+                </li>
+            </ol>
+
+        </div>
+
+        <footer>
+            <p id="design">Designed and Created by Nayem Ahmed</p>
+            <p id="socialMe">
+                Stay in touch
+            </p>
+            <div class="socialLink">
+                <a href="#" id="lin">Linkedin</a>
+                <a href="#" id="ins">Instragram</a>
+                <a href="#" id="fb">Facebook</a>
+            </div>
+        </footer>
+    </body>
+</html>
