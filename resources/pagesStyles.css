@@ -1,0 +1,44 @@
+.examples{
+    background-color: #eee; color: black; padding: 8px; border-left: 7px solid gray;
+}
+
+#b1{
+    color: red;
+}
+#b2{
+    color: green;
+}
+#b3{
+    color: blue;
+}
+
+#ttest2{
+    margin: 0; padding: 5px; width: 300px; text-indent: 25px; text-align: justify; border: thin outset white;
+}
+#ttest3{
+    width: 300px; padding: 5px; margin: 0; border: thin outset white; letter-spacing: 5px;
+}
+#ttest3-1{
+    width: 300px; padding: 5px; margin: 0; border: thin outset white; word-spacing: 10px;
+}
+#ttest4{
+    width: 300px; padding: 5px; margin: 0; border: thin outset white; text-align: justify; line-height: 1.5;
+}
+#ttest5{
+    width: 100%; margin: 0;
+}
+#ttest6{
+    font-size: 150%; margin:0 0 8px 0; color: white; text-shadow: 2px 2px 5px black; 
+}
+
+/*About Me*/
+#about{
+    width: 60%; margin: 5px auto;
+}
+
+
+@media screen and (max-width: 600px) {
+    #about{
+        width: 80%;
+    }
+  }
