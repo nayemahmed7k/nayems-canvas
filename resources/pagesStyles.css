@@ -37,6 +37,18 @@
 }
 
 
+/*my Learning*/
+.myLrT{
+    width: 50%; border-collapse: collapse; text-align: left;
+}
+.myLrT th{
+    background-color: lightgray;
+}
+.myLrT td, th{
+    border: thin solid black; padding: 5px;
+}
+
+
 @media screen and (max-width: 600px) {
     #about{
         width: 80%;
