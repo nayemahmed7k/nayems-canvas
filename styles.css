@@ -60,7 +60,7 @@ section{
 
 /*Section's Sidebar*/ /*Use buttons for sidebar contents*/
 .sideBar{
-    float: left; width: 18%; background-color: #ccf; font-family: verdana;
+    float: left; width: 18%; background-color: #ccf; font-family: verdana; height: auto;
 }
 .sideBar button{
     width: 100%; margin-bottom: 10px; padding: 8px; border-style: none; border-left: 6px solid blue; background-color: skyblue; color: black; cursor: pointer; font-family: verdana;
@@ -72,7 +72,7 @@ section{
 
 /*Footer SEction*/
 footer{
-    background-color: lightslategray; overflow: hidden;
+    width: 100%; background-color: lightslategray; overflow: hidden;
     text-align: center; height: 110px;
 }
 #design{
