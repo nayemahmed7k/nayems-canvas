@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0;
+    margin: 0; background-color: #eee;
 }
 
 /*Heading SEction*/
@@ -19,7 +19,7 @@ header h1{
     text-shadow: 4px 4px 10px blue;
 }
 #logo{
-    margin-right: 10px;
+    margin-right: 5px;
     padding: 10px; height: 80px; width: 80px; border-radius: 50%;
     float: right; opacity: 70%;
 }
@@ -28,11 +28,11 @@ header h1{
 /*Navigation Section*/
 nav{
     background-color: gray;
-    padding: 5px;
+    padding: 8px;
     text-align: center;
 }
 nav a{
-    margin: 5px; padding: inherit;
+    margin: 5px; padding: 6px;
     color: black; text-decoration: none;
 }
 nav a:hover{
@@ -42,25 +42,31 @@ nav a:hover{
 
 /*Section*/
 section{
-    height: 720px; margin: 0 5px; background-color: #eee;
+    height: 720px; margin: 0 5px;
 }
 
 
 /*Section's Main*/
 .main{
-    float: right; width: 80%; border-style: solid;
+    float: right; width: 82%; border-style: solid; height: inherit;
+}
+.details{
+    text-align: center; font-style: 'verdana', sans-serif;
+}
+#profile{
+    margin-top: 70px; height: 300px; width: 300px; border-radius: 50%;
 }
 
 
 /*Section's Sidebar*/ /*Use buttons for sidebar contents*/
 .sideBar{
-    float: left; width: 20%; border-style: ridge;
+    float: left; width: 18%; background-color: #ccf; font-family: verdana;
 }
 .sideBar button{
-    width: 100%; margin-bottom: 8px; padding: 5px; border: 1px solid white; border-left: 5px solid black; background-color: gray; color: white; cursor: pointer;
+    width: 100%; margin-bottom: 10px; padding: 8px; border-style: none; border-left: 6px solid blue; background-color: skyblue; color: black; cursor: pointer; font-family: verdana;
 }
 .sideBar button:hover{
-    border-style: solid; border-color: red;
+    background-color: red; color: white;
 }
 
 
@@ -99,4 +105,13 @@ footer a:hover{
     .main, .sideBar {
         width: 100%;
     }
+    #profile{
+        height: 250px; width: 250px;
+    }
   }
+
+
+/*Universal effects and Styles*/
+.done{
+    font-weight: bold;
+}
