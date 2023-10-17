@@ -49,8 +49,40 @@
 }
 
 
-@media screen and (max-width: 600px) {
+/*Practices / My Learning.html*/
+.practices{
+    margin: 20px auto; width: 99%; overflow: hidden; box-sizing: border-box;
+}
+.p_container{
+    width: 33%; float: left; border: thin solid gray; background-color: lightgray; border-radius: 20px;
+}
+.p_container p{
+    text-align: center;
+}
+.p_container ul{
+    margin-left: 7%;
+}
+.p_container ul li{
+    margin: 10px;
+}
+.p_container a{
+    padding: 5px;
+}
+.p_container a:hover{
+    background-color: black; color: white; text-decoration: none;
+}
+
+/*Practice: sign in*/
+.p_forms{
+    text-align: center; width: 40%; margin: 0 auto;
+}
+
+
+@media screen and (max-width: 620px) {
     #about{
         width: 80%;
+    }
+    .p_container{
+        width: 100%; margin-bottom: 8px;
     }
   }
