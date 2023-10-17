@@ -48,10 +48,16 @@ section{
 
 /*Section's Main*/
 .main{
-    float: right; width: 82%; border-style: solid; height: inherit;
+    float: right; width: 82%; border: thin solid gray; height: inherit;
 }
 .details{
     text-align: center; font-style: 'verdana', sans-serif;
+}
+#d_h1{
+    color: white; font-variant: small-caps; text-shadow: 2px 2px 5px blue, 2px 2px 5px red; font-size: 180%; margin: 10px;
+}
+#d_p1{
+    font-size: 120%; margin: 5px; font-weight: bold; color: purple;
 }
 #profile{
     margin-top: 70px; height: 300px; width: 300px; border-radius: 50%;
@@ -73,19 +79,13 @@ section{
 /*Footer SEction*/
 footer{
     width: 100%; background-color: lightslategray; overflow: hidden;
-    text-align: center; height: 110px;
+    text-align: center; height: 118px;
 }
 #design{
     font-size: 110%; color: black;
 }
 #socialMe{
-    color: black; margin-bottom: 7px;
-}
-#socialLink{
-    margin-bottom: 5px;
-}
-footer a{
-     padding: 5px; text-decoration: none; background-color: #cccccc; border-radius: 10px;
+    color: black; margin: 6px auto 10px;
 }
 #lin{
     color: #0072b1;
@@ -96,7 +96,16 @@ footer a{
 #ins{
     color: #d12c92;
 }
-footer a:hover{
+.socialLink a{
+    padding: 5px; text-decoration: none; background-color: #cccccc; border-radius: 10px;
+}
+.socialLink a:hover{
+    background-color: black;
+}
+#comment{
+    margin-left: 4px; color: blue; font-size: 115%; padding: 5px; border-radius: 20px;
+}
+#comment:hover{
     background-color: black; color: white;
 }
 
@@ -114,4 +123,7 @@ footer a:hover{
 /*Universal effects and Styles*/
 .done{
     font-weight: bold;
+}
+#underM{
+    text-align: center; color: red;
 }
