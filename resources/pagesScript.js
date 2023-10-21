@@ -40,51 +40,96 @@ function shadow(sb){
 
 
 /* HTML Javascript Page */
-function fun1() {
+function changeF() {
     document.getElementById('t1').innerHTML= "Did you notice that?";
 }
-function fun3() {
-    document.getElementById('t3').style.backgroundColor= "green";
+function backGF() {
+    document.getElementById('t3').style.backgroundColor= "skyblue";
 }
 function color(codE) {
+    var ca, cb, cc;
+    ca= document.getElementById('red');
+    cb= document.getElementById('green');
+    cc= document.getElementById('blue');
     if(codE==0) {
         document.getElementById('t2').style.color= "red";
+        ca.style.color= "red";
+        cb.style.color= "black";
+        cc.style.color= "black";
     }
     else if(codE==1) {
         document.getElementById('t2').style.color= "green";
+        cb.style.color= "green";
+        ca.style.color= "black";
+        cc.style.color= "black";
     }
     else if(codE==2) {
         document.getElementById('t2').style.color= "blue";
+        cc.style.color= "blue";
+        ca.style.color= "black";
+        cb.style.color= "black";
     }
 }
-
-function fun4(sw) {
+function lightF(sw) {
     if(sw==1) {
-        document.getElementById('light').src= "/resources/pictures/lighton.png";
+        document.getElementById('light').src= "/media/lighton.png";
     }
     else if(sw==0) {
-        document.getElementById('light').src= "/resources/pictures/lightoff.png";
+        document.getElementById('light').src= "/media/lightoff.png";
     }
+}
+function hideF(){
+    document.getElementById('hideOut').style.display= "none";
+    document.getElementById('h_b1').style.display= "none";
+    document.getElementById('h_b2').style.display= "block";
+
+}
+function unHide(){
+    document.getElementById('hideOut').style.display= "block";
+    document.getElementById('h_b2').style.display= "none";
+    document.getElementById('h_b1').style.display= "block";
 }
 function hBarF(sz) {
     if(sz==0) {
-        document.getElementById('hBar').style.width= "50%";
+        document.getElementById('hBar').style.width= "25%";
     }
     else if(sz==1) {
-        document.getElementById('hBar').style.width= "100%";
+        document.getElementById('hBar').style.width= "50%";
     }
-    else if(sz==3) {
+    else if(sz==2) {
+        document.getElementById('hBar').style.width= "98%";
+    }
+}
+function p_hide(){
         document.getElementById('hBar').style.display= "none";
         document.getElementById('hBarButtons').style.display= "none";
         document.getElementById('hBarPview').style.display= "block";
-    }
-    else if(sz==4) {
-        document.getElementById('hhBar').innerHTML= "Horizontal Bar";
-        document.getElementById('hhBar').style.width= "100%";
-        document.getElementById('hhBar').style.backgroundColor= "whitesmoke";
-        document.getElementById('hhBar').style.borderStyle= "ridge";
-        document.getElementById('hhBar').style.color= "gray";
-        document.getElementById('hhBar').style.padding= "10px";
-        document.getElementById('hhBar').style.textAlign= "center";
-    }
+}
+function p_view(){
+        document.getElementById('hBar').style.display= "block";
+        document.getElementById('hBarPview').style.display= "none";
+        document.getElementById('hBarButtons').style.display= "block";
+}
+
+
+
+//html multimedia page
+function playPause() {
+    var myVideo= document.getElementById('video2');
+    if(myVideo.paused)
+    myVideo.play();
+    else
+    myVideo.pause();
+}
+function makeSmall() {
+    var myVideo= document.getElementById('video2');
+    myVideo.style.width= "25%";
+}
+function makeNormal() {
+    var myVideo= document.getElementById('video2');
+    myVideo.style.width= "35%";
+}
+function makeBig() {
+    var myVideo= document.getElementById('video2');
+    myVideo.style.width= "45%";
 }
