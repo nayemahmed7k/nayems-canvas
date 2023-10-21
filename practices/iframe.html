@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nayem's Canvas</title>
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="/resources/pagesStyles.css">
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <script src="/script.js"></script>
+        <script src="/resources/pagesScript.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>Nayem's Canvas</h1>
+            <img src="/img/mySelf.png" id="logo">
+        </header>
+
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/pages/aboutMe.html">About</a>
+            <a href="/pages/contact.html">Contact</a>
+        </nav>
+
+        <section>
+            <div class="iframeD">
+                <h2>Lets see what is iframe !</h2>
+        <p>An html &lt;iframe&gt; tag is used to display a web page within a web page.<br>
+        Below is a iframe.<br> Choose diffrent practice tasks or project listed below to open one of them in the given frame: </p>
+        <ul class="chooseList">
+            <li>
+                <a href="https://light-on-off-practice.netlify.app/" target="frame1">Practice: Light on/off</a>
+            </li>
+            <li>
+                <a href="https://html-layout-practice.netlify.app/" target="frame1" onclick="notResponsiveAlert()">Practice: HTML Layout</a>
+            </li>
+            <li>
+                <a href="https://html-responsive-web.netlify.app/" target="frame1">Practice: Responsive Web Design</a>
+            </li>
+            <li>
+                <a href="https://blood-donation-ms.netlify.app/" target="frame1" onclick="notResponsiveAlert()">Project: Blood Donation Management System</a>
+            </li>
+        </ul>
+        <div id="frame1div">
+        <iframe id="frame1" src="" name="frame1" title="an iframe"></iframe>
+        </div>
+            </div>
+        </section>
+
+        <footer>
+            <p id="socialMe">
+                Stay in touch
+            </p>
+            <div class="socialLink">
+                <a href="#" id="lin">Linkedin</a>
+                <a href="#" id="ins">Instragram</a>
+                <a href="#" id="fb">Facebook</a>
+            </div>
+            <p>
+                Feel free to comment about my work on
+                <a href="/pages/survey.html" id="comment">Here</a> <br>
+                @nayems-canvas 2023 --- PF v2.1
+            </p>
+        </footer>
+    </body>
+</html>
