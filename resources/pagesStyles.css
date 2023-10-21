@@ -1,3 +1,4 @@
+/*Text Indentation*/
 .examples{
     background-color: #eee; color: black; padding: 8px; border-left: 7px solid gray;
 }
@@ -31,6 +32,8 @@
     font-size: 150%; margin:0 0 8px 0; color: white; text-shadow: 2px 2px 5px black; 
 }
 
+
+
 /*About Me*/
 #about{
     width: 60%; margin: 5px auto;
@@ -39,7 +42,7 @@
 
 /*my Learning*/
 .myLrT{
-    width: 50%; border-collapse: collapse; text-align: left;
+    width: 50%; max-width: 350px; border-collapse: collapse; text-align: center; margin: 5px auto;
 }
 .myLrT th{
     background-color: lightgray;
@@ -51,10 +54,16 @@
 
 /*Practices / My Learning.html*/
 .practices{
-    margin: 20px auto; width: 99%; overflow: hidden; box-sizing: border-box;
+    margin: 20px auto; width: 99%; overflow: hidden; box-sizing: border-box; max-width: 1200px;
 }
 .p_container{
-    width: 33%; float: left; border: thin solid gray; background-color: lightgray; border-radius: 20px;
+    width: 33%; float: left; background-color: lightgray; border-radius: 20px;
+}
+#p_html{
+    margin-right: 3px;
+}
+#p_css{
+    margin-right: 3px;
 }
 .p_container p{
     text-align: center;
@@ -73,16 +82,69 @@
 }
 
 /*Practice: sign in*/
-.p_forms{
-    text-align: center; width: 40%; margin: 0 auto;
+
+
+/* iframe.html */
+#frame1div{
+    padding: 50px;
+}
+#frame1{
+    height: 400px; width: 100%; background-color: white; border: 1px solid red;
+}
+.chooseList li{
+    margin-bottom: 5px;
+}
+.chooseList li a{
+    text-decoration: none;
+}
+
+
+/*HTML Multimedia*/
+#mediaPage{
+    text-align: center; margin-bottom: 40px;
+}
+#video1{
+    width: 35%; border-style: ridge;
+}
+#video2{
+    width: 35%; border-style: ridge;
+}
+
+
+/*Html Javascript*/
+#light{
+    height: 200px; width: 200px; margin-bottom: 5px;
+  }
+#lightOn{
+    color: green;
+}
+#lightOff{
+    color: red;
+}
+#h_b2{
+    display: none;
+}
+#hBar{
+    width: 98%; background-color: whitesmoke; border-style: ridge; color: gray; padding: 10px; text-align: center;
+}
+#hBarPview{
+    display: none;
+}
+
+
+/*Media Query*/
+@media screen and (max-width: 800px) {
+    #video1, #video2{
+        width: 70%;
+    }
 }
 
 
 @media screen and (max-width: 620px) {
     #about{
-        width: 80%;
+        width: 90%;
     }
     .p_container{
-        width: 100%; margin-bottom: 8px;
+        width: 90%; margin: 0 auto 20px 20px;
     }
   }
