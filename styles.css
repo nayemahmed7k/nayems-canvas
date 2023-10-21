@@ -42,7 +42,7 @@ nav a:hover{
 
 /*Section*/
 section{
-    height: 720px; margin: 0 5px;
+    height: 720px; margin: 0 5px; border: thin solid gray;
 }
 
 
@@ -115,10 +115,14 @@ footer{
         width: 100%;
     }
     #profile{
-        height: 250px; width: 250px;
+        height: 200px; width: 200px;
     }
   }
-
+@media screen and (max-width: 460px){
+    .allH1{
+        font-size: 130%;
+    }
+}
 
 /*Universal effects and Styles*/
 .done{
@@ -126,4 +130,7 @@ footer{
 }
 #underM{
     text-align: center; color: red;
+}
+.tCent{
+    text-align: center;
 }
