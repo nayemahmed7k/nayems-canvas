@@ -5,18 +5,13 @@
         <link rel="stylesheet" href="/styles.css">
         <link rel="stylesheet" href="/resources/pagesStyles.css">
         <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="author" content="Nayem Ahmed">
+        <meta name="description" content="Practice- sign in">
+        <meta name="keywords" content="nayem, nayem ahmed, portfolio, nayemscanvas, web designer, web developer, sign in">
         <script src="/script.js"></script>
         <script src="/resources/pagesScript.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YVX12HQ51"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-9YVX12HQ51');
-        </script>
     </head>
     <body>
         <header>
@@ -34,11 +29,13 @@
             <h2 style="font-family: verdana; text-align: center;">Enter your sign in information to get access</h2>
             <div style="width: 300px; max-width: 250px; margin: 5px auto;">
                 <form>
-                    <fieldset class="p_forms">
+                    <fieldset> <!--class="p_forms"-->
                         <legend>Sign in</legend>
-                        <input type="text" id="username" name="username" placeholder="username" required> <br>
+                        <input type="text" id="username" name="username" style="margin: 5px;" placeholder="username" required> <br>
                         <input type="password" id="password" name="password" placeholder="password" required> <br>
-                        <input type="submit" value="log in"> 
+                        <p style="margin-bottom: 5px;" class="tCent">
+                            <input type="submit" value="Log in" id="pSubB">
+                         </p>
                     </fieldset>
                 </form>
             </div>
