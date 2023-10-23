@@ -110,6 +110,18 @@ footer{
 }
 
 
+/*About me*/
+.a_main{
+    max-width: 1050px; border: thin dotted skyblue; padding: 20px; margin: 0 auto; font-family: verdana;
+}
+.a_para{
+    text-align: left;
+}
+.a_other{
+    max-width: 1050px; border: thin dotted skyblue; padding: 20px; margin: 0 auto;
+}
+
+
 @media screen and (max-width: 600px) {
     .main, .sideBar {
         width: 100%;
@@ -133,4 +145,7 @@ footer{
 }
 .tCent{
     text-align: center;
+}
+.sCaps{
+    font-variant: small-caps;
 }
