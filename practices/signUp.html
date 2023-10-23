@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Nayem's Canvas</title>
+        <title>Sign Up Form | Practice</title>
         <link rel="stylesheet" href="/styles.css">
         <link rel="stylesheet" href="/resources/pagesStyles.css">
         <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="author" content="Nayem Ahmed">
+        <meta name="description" content="Practice- sign up">
+        <meta name="keywords" content="nayem, nayem ahmed, portfolio, nayemscanvas, web designer, web developer, sign up">
         <script src="/script.js"></script>
         <script src="/resources/pagesScript.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YVX12HQ51"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-9YVX12HQ51');
-        </script>
         <style>
-            th, td{
-                background: none;
-            }
+            th{ text-align: right; padding-right: 10px; }
+            td{ padding: 3px; }
         </style>
     </head>
     <body>
@@ -36,13 +30,13 @@
         </nav>
 
         <section>
-            <!--
-                <h2 style="font-family: verdana;">Fill the from below to Sign up</h2>
-            <div class="p_forms">
+
+                <h2 style="font-family: verdana;" class="tCent">Fill the from below to Sign up</h2>
+            <div id="pSignUp">
                 <form method="post">
-                    <fieldset id="regiFieldset">
-                        <legend>Sign Up</legend>
-                         <table class="regiTable">
+                    <fieldset>
+                        <legend>Registration</legend>
+                         <table>
                             <tr>
                                 <th>
                                     <label for="fname">First Name: </label>
@@ -95,9 +89,9 @@
                                     </select>
                                 </td>
                             </tr>
-                         </table>
-                         <hr>
-                         <table class="regiTable">
+                            <tr>
+                                <th colspan="2"> <hr> </th>
+                            </tr>
                             <tr>
                                 <th>
                                     <label for="username">Username: </label>
@@ -115,15 +109,12 @@
                                 </td>
                             </tr>
                          </table>
-                         <input type="submit" value="Sign Up" style="margin-top: 5px;">
+                         <p style="margin-bottom: 5px;" class="tCent">
+                            <input type="submit" value="Sign Up" id="pSubB">
+                         </p>
                     </fieldset>
                 </form>
             </div>
-            -->
-            <h1 id="underM"></h1>
-                    <script>
-                         underM();
-                    </script>
         </section>
 
         <footer>
