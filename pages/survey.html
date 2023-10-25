@@ -12,6 +12,16 @@
         <script src="/script.js"></script>
         <script src="/resources/pagesScript.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YVX12HQ51"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-9YVX12HQ51');
+        </script>
+
         <style>
             td{
                 padding: 5px; padding-bottom: 15px;
@@ -49,36 +59,36 @@
             <div class="s_Main">
                 <h1 class="tCent" style="color: blue; font-family: verdana;">Survey</h1>        
                 <div class="s_formArea">
-                    <form action="/pages/submitted.html" data-netlify="true" name="Survey" method="post">
+                    <form action="/pages/submitted.html" name="Survey" method="post" data-netlify="true" data-netlify-recaptcha="true">
                         <h3 style="margin-left: 10px;">Your Feedback is always welcome</h3>
                         <table>
                             <tr>
                                 <td class="naming">
-                                    <input type="text" id="name" name="name" class="f_texts" placeholder="Full Name">
+                                    <input type="text" id="name" name="Name" class="f_texts" placeholder="Full Name" required>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="naming">
-                                    <input type="email" id="email" name="email" class="f_texts" placeholder="Email">
+                                    <input type="email" id="email" name="Email" class="f_texts" placeholder="Email" required>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <label for="exp">1. What do you think of the overall design of my portfolio website?</label> <br>
+                                    <label for="expr">1. What do you think of the overall design of my portfolio website?</label> <br>
                                     <input type="radio" id="worse" name="Expression" value="Worse"> <label for="worse">Worse</label>
                                     <input type="radio" id="bad" name="Expression" value="Bad"> <label for="bad">Bad</label>
                                     <input type="radio" id="neutral" name="Expression" value="Neutral"> <label for="neutral">Neutral</label>
                                     <input type="radio" id="good" name="Expression" value="Good"> <label for="good">Good</label>
-                                    <input type="radio" id="exc" name="Expression" value="Excelent"> <label for="exc">Excelent</label>
+                                    <input type="radio" id="excl" name="Expression" value="Excellent"> <label for="excl">Excellent</label>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <label for="q2">2. Was it easy to find the information you were looking for on my website?</label> <br>
 
-                                    <input type="radio" id="no" name="navigation" value="Hard"> <label for="no">No</label>
-                                    <input type="radio" id="neutral2" name="navigation" value="Neutral"> <label for="neutral2">Neutral</label>
-                                    <input type="radio" id="yes" name="navigation" value="Easy"> <label for="yes">Yes</label>
+                                    <input type="radio" id="no" name="Navigation" value="Hard"> <label for="no">No</label>
+                                    <input type="radio" id="neutral2" name="Navigation" value="Neutral"> <label for="neutral2">Neutral</label>
+                                    <input type="radio" id="yes" name="Navigation" value="Easy"> <label for="yes">Yes</label>
                                 </td>
                             </tr>
                             <tr>
@@ -95,14 +105,14 @@
                             <tr>
                                 <td>
                                     <label for="q4">4. Did you encounter any issues using my website?</label> <br>
-                                    <input type="radio" id="no4" name="Issue" value="Yes"> <label for="no4">No</label>
-                                    <input type="radio" id="yes4" name="Issue" value="No"> <label for="yes4">Yes</label>
+                                    <input type="radio" id="no4" name="Issue" value="No"> <label for="no4">No</label>
+                                    <input type="radio" id="yes4" name="Issue" value="Yes"> <label for="yes4">Yes</label>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <label for="q5">5. Is there anything missing from my portfolio that you'd like to see?</label> <br>
-                                    <input type="text" id="q5" name="Misiing" class="f_message">
+                                    <input type="text" id="q5" name="Missing" class="f_message">
                                 </td>
                             </tr>
                             <tr>
@@ -132,17 +142,19 @@
                             <tr>
                                 <td>
                                     <label for="q9">9. Did you encounter any technical issues or difficulties while using my website? If so, please describe.</label> <br>
-                                    <input type="text" id="q9" name="Tech Issue" class="f_message">
+                                    <input type="text" id="q9" name="TechIssue" class="f_message">
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <label for="q10">10. Do you have any other comments or feedback about my portfolio, my works, or the overall user experience on my website?</label> <br>
-                                <input type="text" id="q10" name="Comment" class="f_message">
+                                    <input type="text" id="q10" name="Comment" class="f_message">
                                 </td>
                             </tr>
                         </table>
+                        <div data-netlify-recaptcha="true"></div>
                         <p style="text-align: center;">
+                            <input type="reset" value="Clear" id="s_rBtn">
                             <input type="submit" value="Submit" id="s_sBtn">
                         </p>
                     </form>
