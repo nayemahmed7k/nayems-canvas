@@ -1,4 +1,122 @@
-/*Text Indentation*/
+                    /*---Pages Styles---*/
+/*About Me*/
+#about{
+    width: 60%; margin: 5px auto;
+}
+
+/*Contact Me*/
+
+
+/*Details*/
+.d_faq{
+    background-color: gray; padding: 10px; color: white;
+}
+
+
+/*My Learning.html*/
+.myLrT{
+    width: 50%; max-width: 350px; border-collapse: collapse; text-align: center; margin: 5px auto;
+}
+.practices{
+    margin: 20px auto; width: 99%; overflow: hidden; box-sizing: border-box; max-width: 1200px;
+}
+.p_container{
+    width: 33%; float: left; background-color: lightgray; border-radius: 20px;
+}
+#p_html{
+    margin-right: 3px;
+}
+#p_css{
+    margin-right: 3px;
+}
+.p_container p{
+    text-align: center;
+}
+.p_container ul{
+    margin-left: 7%;
+}
+.p_container ul li{
+    margin: 10px;
+}
+.p_container a{
+    padding: 5px;
+}
+.p_container a:hover{
+    background-color: black; color: white; text-decoration: none;
+}
+
+
+/*Survey*/
+.s_Main{
+    max-width: 500px; margin: 10px auto; padding: 5px;
+}
+.s_formArea{
+    border: thin dotted black; border-radius: 15px;
+}
+
+#s_sBtn{
+    background-color: green; color: white; padding: 5px; border-radius: 10px;
+}
+
+
+                    /*---Practices:Pages Styles---*/
+/*Practice/HTML: sign in*/
+
+
+/*Practice: Sign up*/
+#pSignUp{
+    width: 310px; margin: 5px auto;
+}
+#pSubB{
+    background-color: blue; color: white; border-radius: 10px;
+}
+
+/*Html Javascript*/
+#light{
+    height: 200px; width: 200px; margin-bottom: 5px;
+  }
+#lightOn{
+    color: green;
+}
+#lightOff{
+    color: red;
+}
+#h_b2{
+    display: none;
+}
+#hBar{
+    width: 98%; background-color: whitesmoke; border-style: ridge; color: gray; padding: 10px; text-align: center;
+}
+#hBarPview{
+    display: none;
+}
+
+/* iframe.html */
+#frame1div{
+    padding: 50px;
+}
+#frame1{
+    height: 400px; width: 100%; background-color: white; border: 1px solid red;
+}
+.chooseList li{
+    margin-bottom: 5px;
+}
+.chooseList li a{
+    text-decoration: none;
+}
+
+/*HTML Multimedia*/
+#mediaPage{
+    text-align: center; margin-bottom: 40px;
+}
+#video1{
+    width: 35%; border-style: ridge;
+}
+#video2{
+    width: 35%; border-style: ridge;
+}
+
+/*Practice/CSS: Text Indentation*/
 .examples{
     background-color: #eee; color: black; padding: 8px; border-left: 7px solid gray;
 }
@@ -33,104 +151,7 @@
 }
 
 
-
-/*About Me*/
-#about{
-    width: 60%; margin: 5px auto;
-}
-
-
-/*my Learning*/
-.myLrT{
-    width: 50%; max-width: 350px; border-collapse: collapse; text-align: center; margin: 5px auto;
-}
-.myLrT th{
-    background-color: lightgray;
-}
-.myLrT td, th{
-    border: thin solid black; padding: 5px;
-}
-
-
-/*Practices / My Learning.html*/
-.practices{
-    margin: 20px auto; width: 99%; overflow: hidden; box-sizing: border-box; max-width: 1200px;
-}
-.p_container{
-    width: 33%; float: left; background-color: lightgray; border-radius: 20px;
-}
-#p_html{
-    margin-right: 3px;
-}
-#p_css{
-    margin-right: 3px;
-}
-.p_container p{
-    text-align: center;
-}
-.p_container ul{
-    margin-left: 7%;
-}
-.p_container ul li{
-    margin: 10px;
-}
-.p_container a{
-    padding: 5px;
-}
-.p_container a:hover{
-    background-color: black; color: white; text-decoration: none;
-}
-
-/*Practice: sign in*/
-
-
-/* iframe.html */
-#frame1div{
-    padding: 50px;
-}
-#frame1{
-    height: 400px; width: 100%; background-color: white; border: 1px solid red;
-}
-.chooseList li{
-    margin-bottom: 5px;
-}
-.chooseList li a{
-    text-decoration: none;
-}
-
-
-/*HTML Multimedia*/
-#mediaPage{
-    text-align: center; margin-bottom: 40px;
-}
-#video1{
-    width: 35%; border-style: ridge;
-}
-#video2{
-    width: 35%; border-style: ridge;
-}
-
-
-/*Html Javascript*/
-#light{
-    height: 200px; width: 200px; margin-bottom: 5px;
-  }
-#lightOn{
-    color: green;
-}
-#lightOff{
-    color: red;
-}
-#h_b2{
-    display: none;
-}
-#hBar{
-    width: 98%; background-color: whitesmoke; border-style: ridge; color: gray; padding: 10px; text-align: center;
-}
-#hBarPview{
-    display: none;
-}
-
+    /*---Media Queries---*/
 
 /*Media Query*/
 @media screen and (max-width: 800px) {
@@ -138,7 +159,6 @@
         width: 70%;
     }
 }
-
 
 @media screen and (max-width: 620px) {
     #about{
