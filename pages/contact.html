@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Nayem's Canvas</title>
+        <title>Contact | Nayem's Canvas</title>
         <link rel="stylesheet" href="/styles.css">
         <link rel="stylesheet" href="/resources/pagesStyles.css">
         <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
@@ -11,6 +11,20 @@
         <meta name="keywords" content="contact, nayem, nayem ahmed, portfolio, nayemscanvas, web designer, web developer">
         <script src="/script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YVX12HQ51"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-9YVX12HQ51');
+        </script>
+        <style>
+            input, textarea{
+                width: 340px;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -25,18 +39,34 @@
         </nav>
 
         <section style="text-align: center; overflow: hidden;">
-            <h1 id="underM"></h1>
-            <script>
-                underM();
-             </script>
-            <div style="margin-top: 50px;">
+
+            <div style="margin-top: 30px;">
                 <h3>Sample Contact Information</h3>
                 <address>
                     Name: Nayem Ahmed <br>
                     Phone: 01701020304 <br>
-                    Email: contact@nayemscanvas.com <br>
+                    Email: email@nayemscanvas.xyz <br>
                     Address: Bhadeshwar, Sylhet
                 </address>
+                <p style="margin: 10px; color: red;">
+                    This is a sample contact details. But, if you wish you can leave a message for me. Check the fields below:
+                </p>
+            </div> <br><br>
+            <div class="contact_form">
+                <h3>Leave A message to me</h3>
+                <form action="/pages/sent.html" name="Contact" method="post" data-netlify="true" data-netlify-recaptcha="true" style="text-align: left;">
+                    <label for="name">Name</label> <br>
+                    <input type="text" id="name" name="Name" required> <br><br>
+                    <label for="email">Email</label> <br>
+                    <input type="email" id="email" name="Email" required> <br><br>
+                    <label for="message">Message</label> <br> 
+                    <textarea name="Message" rows="5" cols="20" required></textarea> <br>
+                    <div data-netlify-recaptcha="true"></div>
+                    <p style="text-align: center;">
+                        <input type="reset" value="Clear" id="s_rBtn" style="width: 80px;">
+                        <input type="submit" value="Send" id="s_sBtn" style="width: 80px;">
+                    </p>
+                </form>
             </div>
         </section>
 
