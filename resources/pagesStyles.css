@@ -5,7 +5,9 @@
 }
 
 /*Contact Me*/
-
+.contact_form{
+    padding: 10px; max-width: 370px; margin: 5px auto; border: thin dotted gray; box-sizing: border-box; border-radius: 15px;
+}
 
 /*Details*/
 .d_faq{
@@ -55,7 +57,16 @@
 }
 
 #s_sBtn{
-    background-color: green; color: white; padding: 5px; border-radius: 10px;
+    background-color: green; color: white; padding: 5px; border-radius: 10px; margin: 5px;
+}
+#s_rBtn{
+    background-color: red; color: white; padding: 5px; border-radius: 10px; margin: 5px;
+}
+
+
+/*Submit / Sent*/
+.statusOut{
+    width: 300px; margin: 5px auto; border-style: ridge; padding: 10px; background-color: skyblue; border-radius: 20px; text-align: center; color: blue;
 }
 
 
