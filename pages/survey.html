@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Nayem's Canvas | Survey</title>
+        <title>Survey | Nayem's Canvas</title>
         <link rel="stylesheet" href="/styles.css">
         <link rel="stylesheet" href="/resources/pagesStyles.css">
         <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
@@ -12,6 +12,26 @@
         <script src="/script.js"></script>
         <script src="/resources/pagesScript.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            td{
+                padding: 5px; padding-bottom: 15px;
+            }
+            .f_texts{
+                width: 330px;
+            }
+            input[type="text"]::placeholder {
+                text-align: center;
+            }
+            input[type="email"]::placeholder{
+                text-align: center;
+            }
+            .f_message{
+                width: 100%;
+            }
+            .naming{
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -25,9 +45,109 @@
             <a href="/pages/contact.html">Contact</a>
         </nav>
 
-        <section>
-            <h1>This is a template for Survey</h1>
-            <p>Form is not yet added</p>
+        <section style="height: auto; border-style: none;">
+            <div class="s_Main">
+                <h1 class="tCent" style="color: blue; font-family: verdana;">Survey</h1>        
+                <div class="s_formArea">
+                    <form action="/submitted.html" name="Survey" method="post">
+                        <h3 style="margin-left: 10px;">Your Feedback is always welcome</h3>
+                        <table>
+                            <tr>
+                                <td class="naming">
+                                    <input type="text" id="name" name="name" class="f_texts" placeholder="Full Name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="naming">
+                                    <input type="email" id="email" name="email" class="f_texts" placeholder="Email">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="exp">1. What do you think of the overall design of my portfolio website?</label> <br>
+                                    <input type="radio" id="worse" name="Expression" value="Worse"> <label for="worse">Worse</label>
+                                    <input type="radio" id="bad" name="Expression" value="Bad"> <label for="bad">Bad</label>
+                                    <input type="radio" id="neutral" name="Expression" value="Neutral"> <label for="neutral">Neutral</label>
+                                    <input type="radio" id="good" name="Expression" value="Good"> <label for="good">Good</label>
+                                    <input type="radio" id="exc" name="Expression" value="Excelent"> <label for="exc">Excelent</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="q2">2. Was it easy to find the information you were looking for on my website?</label> <br>
+
+                                    <input type="radio" id="no" name="navigation" value="Hard"> <label for="no">No</label>
+                                    <input type="radio" id="neutral2" name="navigation" value="Neutral"> <label for="neutral2">Neutral</label>
+                                    <input type="radio" id="yes" name="navigation" value="Easy"> <label for="yes">Yes</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="q3">3. What would you like me to improve on my portfolio?</label> <br>
+
+                                    <input type="checkbox" id="p1" name="p1" value="Layout"> <label for="p1">Layout</label>
+                                    <input type="checkbox" id="p2" name="p2" value="Design"> <label for="p2">Design</label>
+                                    <input type="checkbox" id="p3" name="p3" value="Fonts"> <label for="p3">Fonts</label>
+                                    <input type="checkbox" id="p4" name="p4" value="Colors"> <label for="p4">Colors</label>
+                                    <input type="checkbox" id="p5" name="p5" value="Everything"> <label for="p5">Everything</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="q4">4. Did you encounter any issues using my website?</label> <br>
+                                    <input type="radio" id="no4" name="Issue" value="Yes"> <label for="no4">No</label>
+                                    <input type="radio" id="yes4" name="Issue" value="No"> <label for="yes4">Yes</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="q5">5. Is there anything missing from my portfolio that you'd like to see?</label> <br>
+                                    <input type="text" id="q5" name="Misiing" class="f_message">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="q6">6. Would you recommend my portfolio to others?</label> <br>
+                                    <input type="radio" id="no6" name="Recommend" value="No"> <label for="no6">No</label>
+                                    <input type="radio" id="yes6" name="Recommend" value="Yes"> <label for="yes6">Yes</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="q7">7. How did you discovered my Portfolio?</label> <br>
+                                    <input list="medium" name="Medium" style="width: 120px;">
+                                    <datalist id="medium">
+                                        <option value="Search Engine">
+                                        <option value="Social Media">
+                                        <option value="Referral">
+                                    </datalist>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="q8">8. In your opinion, what are the strengths and weaknesses of my portfolio website?</label> <br>
+                                    <input type="text" id="q8" name="Opinion" class="f_message">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="q9">9. Did you encounter any technical issues or difficulties while using my website? If so, please describe.</label> <br>
+                                    <input type="text" id="q9" name="Tech Issue" class="f_message">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="q10">10. Do you have any other comments or feedback about my portfolio, my works, or the overall user experience on my website?</label> <br>
+                                <input type="text" id="q10" name="Comment" class="f_message">
+                                </td>
+                            </tr>
+                        </table>
+                        <p style="text-align: center;">
+                            <input type="submit" value="Submit" id="s_sBtn">
+                        </p>
+                    </form>
+                </div>
+            </div>
         </section>
 
         <footer>
