@@ -78,36 +78,30 @@ section{
 
 /*Footer SEction*/
 footer{
-    width: 100%; background-color: lightslategray; overflow: hidden;
-    text-align: center; height: 118px;
+    width: 100%; background-color: lightslategray; text-align: center; height: auto; overflow: hidden;
 }
-#design{
-    font-size: 110%; color: black;
+#f_p1{
+    color: blue; margin: 5px auto 0;
 }
-#socialMe{
-    color: black; margin: 6px auto 10px;
+#f_p2{
+    margin: 0 auto 3px;
 }
-#lin{
-    color: #0072b1;
+#f_p3{
+    margin-top: 5px;
 }
-#fb{
-    color: #0866FF;
+.socialLink{
+    margin: 0 auto; overflow: hidden; width: 120px;
 }
-#ins{
-    color: #d12c92;
+.f_divs{
+    float: left; margin: 5px;
 }
-.socialLink a{
-    padding: 5px; text-decoration: none; background-color: #cccccc; border-radius: 10px;
+.f_link{
+    border-radius: 50%;
 }
-.socialLink a:hover{
-    background-color: black;
+.f_logos{
+    width: 30px; border-radius: 50%;
 }
-#comment{
-    margin-left: 4px; color: blue; font-size: 115%; padding: 5px; border-radius: 20px;
-}
-#comment:hover{
-    background-color: black; color: white;
-}
+
 
 
 /*About me*/
