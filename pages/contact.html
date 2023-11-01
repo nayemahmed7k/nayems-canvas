@@ -24,10 +24,13 @@
             input, textarea{
                 width: 340px;
             }
+            input{
+                height: 30px;
+            }
         </style>
     </head>
     <body>
-        <header>
+        <header id="home">
             <h1>Nayem's Canvas</h1>
             <img src="/img/mySelf.png" id="logo">
         </header>
@@ -52,15 +55,15 @@
                     This is a sample contact details. But, if you wish you can leave a message for me. Check the fields below:
                 </p>
             </div> <br><br>
-            <div class="contact_form">
+            <div class="contact_form" id="contactMe">
                 <h3>Leave A message to me</h3>
                 <form action="/pages/sent.html" name="Contact" method="post" data-netlify="true" data-netlify-recaptcha="true" style="text-align: left;">
-                    <label for="name">Name</label> <br>
-                    <input type="text" id="name" name="Name" required> <br><br>
-                    <label for="email">Email</label> <br>
-                    <input type="email" id="email" name="Email" required> <br><br>
-                    <label for="message">Message</label> <br> 
-                    <textarea name="Message" rows="5" cols="20" required></textarea> <br>
+                    <label for="name">Name*</label> <br>
+                    <input type="text" id="name" name="Name" class="c_formD" required> <br><br>
+                    <label for="email">Email*</label> <br>
+                    <input type="email" id="email" name="Email" class="c_formD" required> <br><br>
+                    <label for="message">Message*</label> <br> 
+                    <textarea name="Message" rows="5" cols="20" class="c_formD" required></textarea> <br>
                     <div data-netlify-recaptcha="true"></div>
                     <p style="text-align: center;">
                         <input type="reset" value="Clear" id="s_rBtn" style="width: 80px;">
@@ -71,18 +74,24 @@
         </section>
 
         <footer>
-            <p id="socialMe">
-                Stay in touch
-            </p>
+            <p id="f_p1">Stay in Touch</p>
             <div class="socialLink">
-                <a href="#" id="lin">Linkedin</a>
-                <a href="#" id="ins">Instragram</a>
-                <a href="#" id="fb">Facebook</a>
+                <div class="f_divs">
+                    <a href="#" class="f_link"> <img src="/logos/in.png" alt="in.png" title="Visit Linkedin Profile" class="f_logos"> </a>
+                </div>
+                <div class="f_divs">
+                    <a href="#" class="f_link"> <img src="/logos/ins.png" alt="ins.png" title="Visit Instragram Profile" class="f_logos"> </a>
+                </div>
+                <div class="f_divs">
+                    <a href="#" class="f_link"> <img src="/logos/fb.png" alt="fb.png" title="Visit Facebook Profile" class="f_logos"> </a>
+                </div>
             </div>
-            <p>
-                Feel free to comment about my work on
-                <a href="/pages/survey.html" id="comment">Here</a> <br>
-                @nayems-canvas 2023 --- PF v2.1
+            <p id="f_p2">
+                Feel free to send a <a href="/pages/survey.html">Feedback</a> <br>
+                <a href="#home">Top</a> | Sitemap | link 3 <br>
+            </p>
+            <p id="f_p3">
+                @Nayem's Canvas | Nov 2023 | <a href="/pages/versions.html">PF v2.0</a>
             </p>
         </footer>
     </body>
