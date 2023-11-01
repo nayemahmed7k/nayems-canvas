@@ -8,6 +8,9 @@
 .contact_form{
     padding: 10px; max-width: 370px; margin: 5px auto; border: thin dotted gray; box-sizing: border-box; border-radius: 15px;
 }
+.c_formD{
+    border: none; border-bottom: 1px dotted black; margin-top: 5px; background-color: whitesmoke;
+}
 
 /*Details*/
 .d_faq{
@@ -55,7 +58,12 @@
 .s_formArea{
     border: thin dotted black; border-radius: 15px;
 }
-
+.s_formD{
+    margin-left: 10px; padding-top: 5px;
+}
+.s_formD2{
+    margin-left: 15px; padding-top: 5px;
+}
 #s_sBtn{
     background-color: green; color: white; padding: 5px; border-radius: 10px; margin: 5px;
 }
