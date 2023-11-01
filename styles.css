@@ -116,6 +116,13 @@ footer{
 }
 
 
+/*Error 404*/
+.erContainer{
+    padding: 15px; max-width: 325px; margin: 150px auto 5px; border-style: ridge; border-radius: 15px; border-color: red; background-color: whitesmoke;
+}
+
+
+
 @media screen and (max-width: 600px) {
     .main, .sideBar {
         width: 100%;
@@ -143,3 +150,5 @@ footer{
 .sCaps{
     font-variant: small-caps;
 }
+
+/* Thanks */
