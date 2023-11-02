@@ -26,7 +26,7 @@
                 padding: 5px; padding-bottom: 15px;
             }
             .f_texts{
-                width: 330px;
+                width: 330px; height: 25px;
             }
             input[type="text"]::placeholder {
                 text-align: center;
@@ -35,7 +35,7 @@
                 text-align: center;
             }
             .f_message{
-                width: 95%; border: none; border-bottom: 1px dotted black;
+                width: 95%; border: none; border-bottom: 1px dotted black; height: 25px;
             }
             .naming{
                 text-align: center;
@@ -166,17 +166,20 @@
                                     <div class="s_formD2">
                                         <input type="text" id="q10" name="Comment" class="f_message">
                                     </div> <br>
-                                    *Ensure the Captcha process is done, before hitting submit
+                                    *Ensure the Re-Captcha process is done, before hitting submit
                                 </td>
                             </tr>
                         </table>
-                        <div data-netlify-recaptcha="true"></div>
+                        <div data-netlify-recaptcha="true" class="s_formD2"></div>
                         <p style="text-align: center;">
                             <input type="reset" value="Clear" id="s_rBtn">
                             <input type="submit" value="Submit" id="s_sBtn">
                         </p>
                     </form>
                 </div>
+                <p>
+                    *To leave a message, click <a href="/pages/contact.html#contactMe">Here</a>
+                </p>
             </div>
         </section>
 
