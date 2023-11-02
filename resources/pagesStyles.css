@@ -6,7 +6,7 @@
 
 /*Contact Me*/
 .contact_form{
-    padding: 10px; max-width: 370px; margin: 5px auto; border: thin dotted gray; box-sizing: border-box; border-radius: 15px;
+    padding: 10px; max-width: 370px; margin: 5px auto 50px; border: thin dotted gray; box-sizing: border-box; border-radius: 15px;
 }
 .c_formD{
     border: none; border-bottom: 1px dotted black; margin-top: 5px; background-color: whitesmoke;
@@ -56,7 +56,7 @@
     max-width: 500px; margin: 10px auto; padding: 5px;
 }
 .s_formArea{
-    border: thin dotted black; border-radius: 15px;
+    border: thin dotted black; border-radius: 15px; margin-bottom: 40px;
 }
 .s_formD{
     margin-left: 10px; padding-top: 5px;
