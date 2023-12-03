@@ -32,17 +32,18 @@
             <a href="/index.html">Home</a>
             <a href="/pages/aboutMe.html">About</a>
             <a href="/pages/contact.html">Contact</a>
+            <a href="/pages/blog.html">Blog</a>
         </nav>
 
         <section style="height: auto;">
-            <div>
-                <h2 style="margin: 5px 10px;" class="tCent">Javascript</h2>
-                <p style="font-size: 130%; margin: 0 10px; text-align: justify; opacity: 70%;">
+            <div class="content_area">
+                <h2 style="margin: 0 auto 5px;" class="tCent">Javascript</h2>
+                <p style="font-size: 125%; text-align: justify; opacity: 70%;">
                     JavaScript is a scripting language for creating dynamic web page content. It is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions. It was invented by Brendan Eich in 1995. JS is a cross-platform, object-oriented programming language used by developers to make web pages interactive. It allows developers to create dynamically updating content, use animations, pop-up menus, clickable buttons, control multimedia, etc.
                 </p>
-                <h2 style="margin-left: 10px;">Lets See what can Javascript do!</h2>
+                <h2>Lets See what can Javascript do!</h2>
                 <p>
-                    <ul>
+                    <ul id="jpUL">
                         <li>
                             <p id="t1">Javascript can change inner text of any html element</p>
                             <button onclick="changeF()">View Example</button>
@@ -100,25 +101,26 @@
         </section>
 
         <footer>
-            <p id="f_p1">Stay in Touch</p>
-            <div class="socialLink">
-                <div class="f_divs">
-                    <a href="#" class="f_link"> <img src="/logos/in.png" alt="in.png" title="Visit Linkedin Profile" class="f_logos"> </a>
-                </div>
-                <div class="f_divs">
-                    <a href="#" class="f_link"> <img src="/logos/ins.png" alt="ins.png" title="Visit Instragram Profile" class="f_logos"> </a>
-                </div>
-                <div class="f_divs">
-                    <a href="#" class="f_link"> <img src="/logos/fb.png" alt="fb.png" title="Visit Facebook Profile" class="f_logos"> </a>
-                </div>
+            <div class="f_cont f_left">
+                <h2>Nayem Ahmed</h2>
+                <p id="f_p1">
+                    <a href="#home">Top</a> - <a href="/pages/sitemap.html">Sitemap</a> - <a href="/pages/blog.html">Blog</a> <br/>
+                    Feel free to give <a href="/pages/survey.html" style="text-decoration: underline;">Feedback</a>
+                </p>
             </div>
-            <p id="f_p2">
-                Feel free to send a <a href="/pages/survey.html">Feedback</a> <br>
-                <a href="#home">Top</a> | Sitemap | link 3 <br>
+            <div class="f_cont f_right">
+                <p id="f_p2">
+                    Stay in Touch
+                </p>
+                <p id="f_p3">
+                    <a href="/404.html" class="f_link"> <img src="/logos/in.png" alt="in.png" title="Not yet added" class="f_logos"> </a>
+                    <a href="https://instagram.com/nym.ahmed" class="f_link" onclick="leaveFun()" target="_blank"> <img src="/logos/ins.png" alt="ins.png" title="Visit Instragram Profile" class="f_logos"> </a>
+                    <a href="https://www.facebook.com/nayemAhmedz" class="f_link" onclick="leaveFun()" target="_blank"> <img src="/logos/fb.png" alt="fb.png" title="Visit Facebook Profile" class="f_logos"> </a>
+                </p>
+            </div> <hr />
+            <p id="f_p4">
+                @Nayem's Canvas | December 2023 | <a href="/pages/versions.html">PF v2.1</a>
             </p>
-            <p id="f_p3">
-                @Nayem's Canvas | Nov 2023 | <a href="/pages/versions.html">PF v2.0</a>
-            </p>
-        </footer>
+        </footer> <!--Thanks-->
     </body>
 </html>
