@@ -31,17 +31,20 @@
             <a href="/index.html">Home</a>
             <a href="/pages/aboutMe.html">About</a>
             <a href="/pages/contact.html">Contact</a>
+            <a href="/pages/blog.html">Blog</a>
         </nav>
 
         <section>
             <div class="main">
                 <div class="details">
-                    <p style="color: red;">This website is under construction</p>
+                    <p style="color: red;">
+                        This website is under construction - 3/12/23
+                    </p>
                     <img src="/img/mySelf.png" id="profile">
                     <h1 id="d_h1">Hey! I am Nayem Ahmed</h1>
                     <p id="d_p1">I am a Web Designer</p>
                     <p>
-                        <a href="/pages/contact.html" style="font-family: calibri;">Hire Me</a>
+                        <a href="/pages/contact.html" style="font-family: calibri;">Let's talk</a>
                     </p> <br>
                     <p>You are warmly welcome to explore my virtual space</p>
 
@@ -50,34 +53,45 @@
             <div class="sideBar">
                 <p style="text-align: center; color: blue;">List of contents</p>
                     <button onclick="document.location='/pages/mLearning.html'" class="done">What I have Learnt?</button>
-                    <button onclick="document.location=''" disabled>Personal Life</button>
+                    <button onclick="document.location='/template.html'" >Personal Life /template</button>
                     <button onclick="document.location='/pages/myProjects.html'" class="done">My Projects</button>
-                    <button onclick="document.location=''" disabled>Study Life</button>
-                    <button onclick="document.location=''" disabled>Days in University</button>
+                    <button onclick="panelFun()" style="cursor: default; margin: auto;">
+                        <img src="/media/angle2.png" id="angle" alt=">"> Study Life
+                    </button>
+                    <div id="h_panel">
+                        <ul class="panelUl">
+                            <li> <a href="#">School Life</a> </li>
+                            <li> <a href="#">About College</a> </li>
+                            <li> <a href="#">Days after College</a> </li>
+                            <li> <a href="#">University life</a> </li>
+                        </ul>
+                    </div>
+                    <button onclick="document.location=''" style="margin-top: 10px;" disabled>Days in University</button>
                     <button onclick="document.location='/pages/uniStaff.html'" class="done">University Tasks n Projects</button>
                     <button onclick="document.location='/pages/details.html'" class="done">How I made this website?</button>
             </div>
         </section>
 
         <footer>
-            <p id="f_p1">Stay in Touch</p>
-            <div class="socialLink">
-                <div class="f_divs">
-                    <a href="#" class="f_link"> <img src="/logos/in.png" alt="in.png" title="Visit Linkedin Profile" class="f_logos"> </a>
-                </div>
-                <div class="f_divs">
-                    <a href="#" class="f_link"> <img src="/logos/ins.png" alt="ins.png" title="Visit Instragram Profile" class="f_logos"> </a>
-                </div>
-                <div class="f_divs">
-                    <a href="#" class="f_link"> <img src="/logos/fb.png" alt="fb.png" title="Visit Facebook Profile" class="f_logos"> </a>
-                </div>
+            <div class="f_cont f_left">
+                <h2>Nayem Ahmed</h2>
+                <p id="f_p1">
+                    <a href="#home">Top</a> - <a href="/pages/sitemap.html">Sitemap</a> - <a href="/pages/blog.html">Blog</a> <br/>
+                    Feel free to give <a href="/pages/survey.html" style="text-decoration: underline;">Feedback</a>
+                </p>
             </div>
-            <p id="f_p2">
-                Feel free to send a <a href="/pages/survey.html">Feedback</a> <br>
-                <a href="#home">Top</a> | Sitemap | link 3 <br>
-            </p>
-            <p id="f_p3">
-                @Nayem's Canvas | Nov 2023 | <a href="/pages/versions.html">PF v2.0</a>
+            <div class="f_cont f_right">
+                <p id="f_p2">
+                    Stay in Touch
+                </p>
+                <p id="f_p3">
+                    <a href="/404.html" class="f_link"> <img src="/logos/in.png" alt="in.png" title="Not yet added" class="f_logos"> </a>
+                    <a href="https://instagram.com/nym.ahmed" class="f_link" onclick="leaveFun()" target="_blank"> <img src="/logos/ins.png" alt="ins.png" title="Visit Instragram Profile" class="f_logos"> </a>
+                    <a href="https://www.facebook.com/nayemAhmedz" class="f_link" onclick="leaveFun()" target="_blank"> <img src="/logos/fb.png" alt="fb.png" title="Visit Facebook Profile" class="f_logos"> </a>
+                </p>
+            </div> <hr />
+            <p id="f_p4">
+                @Nayem's Canvas | December 2023 | <a href="/pages/versions.html">PF v2.1</a>
             </p>
         </footer> <!--Thanks-->
     </body>
