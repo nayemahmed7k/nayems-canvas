@@ -39,11 +39,12 @@
             <a href="/index.html">Home</a>
             <a href="/pages/aboutMe.html">About</a>
             <a href="/pages/contact.html">Contact</a>
+            <a href="/pages/blog.html">Blog</a>
         </nav>
 
         <section style="text-align: center; height: auto; overflow: hidden;">
 
-            <div style="margin-top: 30px;">
+            <div style="margin-top: 30px; opacity: 50%;">
                 <h3>Sample Contact Information</h3>
                 <address>
                     Name: Nayem Ahmed <br>
@@ -51,10 +52,10 @@
                     Email: email@nayemscanvas.xyz <br>
                     Address: Bhadeshwar, Sylhet
                 </address>
-                <p style="margin: 10px; color: red;">
-                    This is a sample contact details. But, if you wish you can leave a message for me. Check the fields below:
-                </p>
-            </div> <br><br>
+            </div>
+            <p style="margin: 10px auto 30px; color: red; opacity: 80%;">
+                This is a sample contact details.<br/> But, if you wish you can leave a message for me.<br/> Check the box below:
+            </p>
             <div class="contact_form" id="contactMe">
                 <h3>Leave A message to me</h3>
                 <form action="/pages/sent.html" name="Contact" method="post" data-netlify="true" data-netlify-recaptcha="true" style="text-align: left;">
@@ -65,6 +66,7 @@
                     <label for="message">Message*</label> <br> 
                     <textarea name="Message" rows="5" cols="20" class="c_formD" required></textarea> <br>
                     <div data-netlify-recaptcha="true"></div>
+                    *Ensure the re-Captcha is marked
                     <p style="text-align: center;">
                         <input type="reset" value="Clear" id="s_rBtn" style="width: 80px;">
                         <input type="submit" value="Send" id="s_sBtn" style="width: 80px;">
@@ -74,25 +76,26 @@
         </section>
 
         <footer>
-            <p id="f_p1">Stay in Touch</p>
-            <div class="socialLink">
-                <div class="f_divs">
-                    <a href="#" class="f_link"> <img src="/logos/in.png" alt="in.png" title="Visit Linkedin Profile" class="f_logos"> </a>
-                </div>
-                <div class="f_divs">
-                    <a href="#" class="f_link"> <img src="/logos/ins.png" alt="ins.png" title="Visit Instragram Profile" class="f_logos"> </a>
-                </div>
-                <div class="f_divs">
-                    <a href="#" class="f_link"> <img src="/logos/fb.png" alt="fb.png" title="Visit Facebook Profile" class="f_logos"> </a>
-                </div>
+            <div class="f_cont f_left">
+                <h2>Nayem Ahmed</h2>
+                <p id="f_p1">
+                    <a href="#home">Top</a> - <a href="/pages/sitemap.html">Sitemap</a> - <a href="/pages/blog.html">Blog</a> <br/>
+                    Feel free to give <a href="/pages/survey.html" style="text-decoration: underline;">Feedback</a>
+                </p>
             </div>
-            <p id="f_p2">
-                Feel free to send a <a href="/pages/survey.html">Feedback</a> <br>
-                <a href="#home">Top</a> | Sitemap | link 3 <br>
+            <div class="f_cont f_right">
+                <p id="f_p2">
+                    Stay in Touch
+                </p>
+                <p id="f_p3">
+                    <a href="/404.html" class="f_link"> <img src="/logos/in.png" alt="in.png" title="Not yet added" class="f_logos"> </a>
+                    <a href="https://instagram.com/nym.ahmed" class="f_link" onclick="leaveFun()" target="_blank"> <img src="/logos/ins.png" alt="ins.png" title="Visit Instragram Profile" class="f_logos"> </a>
+                    <a href="https://www.facebook.com/nayemAhmedz" class="f_link" onclick="leaveFun()" target="_blank"> <img src="/logos/fb.png" alt="fb.png" title="Visit Facebook Profile" class="f_logos"> </a>
+                </p>
+            </div> <hr />
+            <p id="f_p4">
+                @Nayem's Canvas | December 2023 | <a href="/pages/versions.html">PF v2.1</a>
             </p>
-            <p id="f_p3">
-                @Nayem's Canvas | Nov 2023 | <a href="/pages/versions.html">PF v2.0</a>
-            </p>
-        </footer>
+        </footer> <!--Thanks-->
     </body>
 </html>
