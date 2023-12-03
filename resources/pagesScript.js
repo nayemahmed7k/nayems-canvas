@@ -40,8 +40,14 @@ function shadow(sb){
 
 
 /* HTML Javascript Page */
+var jpA= 0;
 function changeF() {
+    if(jpA==0){
     document.getElementById('t1').innerHTML= "Did you notice that?";
+    jpA++; } else {
+        document.getElementById('t1').innerHTML= "Javascript can change inner text of any html element";
+        jpA--;
+    }
 }
 function backGF() {
     document.getElementById('t3').style.backgroundColor= "skyblue";
