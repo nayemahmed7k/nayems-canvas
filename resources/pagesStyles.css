@@ -3,6 +3,23 @@
 #about{
     width: 60%; margin: 5px auto;
 }
+#hPanel2{
+    display: none; background-color: white; padding: 10px;
+}
+.panel2Ul{
+    margin: 0; list-style-type:  none; text-align: right;
+}
+.panel2Ul li{
+    padding: 5px; display: inline-block; margin-bottom: 5px;
+}
+.panel2Ul a:link, .panel2Ul a:visited{
+    padding: 5px; background-color: skyblue; color: black; border-radius: 10px; text-decoration: none;
+}
+.panel2Ul a:hover{
+    background-color: black; color: white;
+}
+
+
 
 /*Contact Me*/
 .contact_form{
@@ -15,6 +32,11 @@
 /*Details*/
 .d_faq{
     background-color: gray; padding: 10px; color: white;
+}
+
+/*Blog*/
+.bVisit{
+    background-color: blue; color: white; border-radius: 15px;padding: 7px; text-decoration: none; display: inline-block;
 }
 
 
