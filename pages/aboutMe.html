@@ -31,65 +31,78 @@
             <a href="/index.html">Home</a>
             <a href="/pages/aboutMe.html">About</a>
             <a href="/pages/contact.html">Contact</a>
+            <a href="/pages/blog.html">Blog</a>
         </nav>
 
         <section style="height: auto;">
-            <p style="color: red; text-align: center;">This page is under construction</p>
-            <div class="a_main">
+            <div class="content_area">
+                <div class="a_main">
                     <div style="border: thin solid gray; overflow: hidden;">
-                        <h1 style="float: left;">About Me</h1>
-                        <p id="menue" style="float: right; background-color: blue; color:white;" title="Will be added">
-                            Drop-down<br>Menue
+                        <h1 style="float: left;">Who Am I ?</h1>
+                        <p style="float: right; margin: 22px 20px 0;">
+                            <button onclick="panelFun2()" id="hPanel2B" style="width: 70px;">
+                                Contents
+                            </button>
                         </p>
                     </div>
-                <p class="a_para">
+                    <div id="hPanel2">
+                        <ul class="panel2Ul">
+                            <li> <a href="#">About me</a> </li>
+                            <li> <a href="#">Hobbies and Leisure</a> </li>
+                            <li> <a href="#">Coding Skill</a> </li>
+                            <li> <a href="#">Social Media</a> </li>
+                        </ul>
+                    </div>
+                    <p class="a_para">
                     Hello there! I'm <span style="font-weight: 900;">Nayem Ahmed</span>.<br><br>
                     I am a dedicated second-year student pursuing a Bachelor's degree in Computer Science and Engineering at Metropolitan University, Sylhet. I've found my passion at the intersection of creativity and innovation, and web design has become my canvas for technical and artistic expression.
-                <br><br>
+                    <br><br>
                     To me, the web is a space where we can craft digital masterpieces, and I can't wait to dive in and explore its endless possibilities.
                     My journey isn't just about coding and design; it's about the transformative power of technology. Every bit of code, every design choice, and every project I tackle adds to my skills and keeps my excitement alive.
-                <br><br>
+                    <br><br>
                     I might be in the early stages of my journey, but that's the exciting part. This website is my journal of progress, where I share insights and connect with people who, like me, are passionate about web design. <br><br>
                     Join me as I navigate the web development landscape, learn from my experiences, and grow into a skilled web designer. Whether you're a fellow student, a web design enthusiast, or just someone curious about the tech world, I'm thrilled to have you here.
-                </p>
-                <p class="a_para tCent">
+                    </p>
+                    <p class="a_para tCent">
                     Together, let's uncover the limitless potential of web design! <br>
                     <a href="/pages/contact.html">Contact Me</a>
-                </p>
-            </div>
-            <div class="a_other">
-                <h3>Have a look on my progress at diffrent platform</h3>
-                <p>
+                    </p>
+                </div>
+                <div class="a_other">
+                    <h3>Have a look on my progress at diffrent platform</h3>
+                    <p>
                     Adding details...
-                </p>
-            </div>
-            <div class="a_other">
-                <p style="text-align: right;">
-                    Last edited on 1 November 2023
-                </p>
+                    </p>
+                    </div>
+                    <div class="a_other">
+                    <p style="text-align: right;">
+                    Last edited on 4 December 2023
+                    </p>
+                </div>
             </div>
         </section>
 
         <footer>
-            <p id="f_p1">Stay in Touch</p>
-            <div class="socialLink">
-                <div class="f_divs">
-                    <a href="#" class="f_link"> <img src="/logos/in.png" alt="in.png" title="Visit Linkedin Profile" class="f_logos"> </a>
-                </div>
-                <div class="f_divs">
-                    <a href="#" class="f_link"> <img src="/logos/ins.png" alt="ins.png" title="Visit Instragram Profile" class="f_logos"> </a>
-                </div>
-                <div class="f_divs">
-                    <a href="#" class="f_link"> <img src="/logos/fb.png" alt="fb.png" title="Visit Facebook Profile" class="f_logos"> </a>
-                </div>
+            <div class="f_cont f_left">
+                <h2>Nayem Ahmed</h2>
+                <p id="f_p1">
+                    <a href="#home">Top</a> - <a href="/pages/sitemap.html">Sitemap</a> - <a href="/pages/blog.html">Blog</a> <br/>
+                    Feel free to give <a href="/pages/survey.html" style="text-decoration: underline;">Feedback</a>
+                </p>
             </div>
-            <p id="f_p2">
-                Feel free to send a <a href="/pages/survey.html">Feedback</a> <br>
-                <a href="#home">Top</a> | Sitemap | link 3 <br>
+            <div class="f_cont f_right">
+                <p id="f_p2">
+                    Stay in Touch
+                </p>
+                <p id="f_p3">
+                    <a href="/404.html" class="f_link"> <img src="/logos/in.png" alt="in.png" title="Not yet added" class="f_logos"> </a>
+                    <a href="https://instagram.com/nym.ahmed" class="f_link" onclick="leaveFun()" target="_blank"> <img src="/logos/ins.png" alt="ins.png" title="Visit Instragram Profile" class="f_logos"> </a>
+                    <a href="https://www.facebook.com/nayemAhmedz" class="f_link" onclick="leaveFun()" target="_blank"> <img src="/logos/fb.png" alt="fb.png" title="Visit Facebook Profile" class="f_logos"> </a>
+                </p>
+            </div> <hr />
+            <p id="f_p4">
+                @Nayem's Canvas | December 2023 | <a href="/pages/versions.html">PF v2.1</a>
             </p>
-            <p id="f_p3">
-                @Nayem's Canvas | Nov 2023 | <a href="/pages/versions.html">PF v2.0</a>
-            </p>
-        </footer>
+        </footer> <!--Thanks-->
     </body>
 </html>
