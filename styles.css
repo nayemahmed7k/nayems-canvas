@@ -31,18 +31,21 @@ nav{
     padding: 8px;
     text-align: center;
 }
-nav a{
+nav a:link, nav a:visited{
     margin: 5px; padding: 6px;
     color: black; text-decoration: none;
 }
 nav a:hover{
     background-color: blue; color: white; border-radius: 10px;
 }
+nav a:active{
+    background-color: black;
+}
 
 
 /*Section*/
 section{
-    height: 720px; margin: 0 5px; border: thin solid gray;
+    height: 720px; margin: auto 3px;
 }
 
 
@@ -51,7 +54,7 @@ section{
     float: right; width: 82%; border: thin solid gray; height: inherit;
 }
 .details{
-    text-align: center; font-style: 'verdana', sans-serif;
+    text-align: center;
 }
 #d_h1{
     color: white; font-variant: small-caps; text-shadow: 2px 2px 5px blue, 2px 2px 5px red; font-size: 180%; margin: 10px;
@@ -72,47 +75,92 @@ section{
     width: 100%; margin-bottom: 10px; padding: 8px; border-style: none; border-left: 6px solid blue; background-color: skyblue; color: black; cursor: pointer; font-family: verdana;
 }
 .sideBar button:hover{
-    background-color: red; color: white;
+    background-color: whitesmoke; color: blue;
+}
+.sideBar button:active{
+    background-color: black; color: white;
+}
+#angle{
+    height: 14px; width: 14px; margin: 0; padding: 0;
+}
+#angle:hover{
+    border-style: ridge;
+}
+#h_panel{
+    display: none; height: 125px; margin: auto; text-align: center; background-color: skyblue; border: 1px solid blue; font-family: arial;
+}
+.panelUl{
+    margin: 0; list-style-type:  none;
+}
+.panelUl li{
+    padding: 5px; margin-left: -40px;
+}
+.panelUl a:link, .panelUl a:visited{
+    padding: inherit; text-decoration: none;
+}
+.panelUl a:hover{
+    background-color: black; color: white;
 }
 
 
 /*Footer SEction*/
 footer{
-    width: 100%; background-color: lightslategray; text-align: center; height: auto; overflow: hidden;
+    width: 100%; background-color: lightslategray; height: auto; overflow: auto; text-align: center; font-family: Calibri;
+}
+footer h2{
+    margin: 0; font-size: 210%;  color: lightgray; text-shadow: 5px 5px 10px black;
+}
+footer h2:hover{
+    color: white;
 }
 #f_p1{
-    color: blue; margin: 5px auto 0;
+    margin: 5px auto 0;
+}
+#f_p1 a:link, a:visited{
+    text-decoration: none;
+}
+#f_p1 a:hover{
+    color: white;
 }
 #f_p2{
-    margin: 0 auto 3px;
+    margin: 5px auto 5px; font-size: 120%; color: blue;
 }
 #f_p3{
-    margin-top: 5px;
+    margin: 10px;
 }
-.socialLink{
-    margin: 0 auto; overflow: hidden; width: 120px;
+.f_cont{
+    width: 50%; float: left; box-sizing: border-box; height: 90px; margin: 10px 0 20px;
 }
-.f_divs{
-    float: left; margin: 5px;
+.f_left{
+    border-right: 1px solid darkgray;
 }
 .f_link{
-    border-radius: 50%;
+    margin: 3px; text-decoration: none; border-radius: 50%;
+}
+.f_link:hover{
+    background-color: black;
 }
 .f_logos{
     width: 30px; border-radius: 50%;
+}
+footer hr{
+    width: 70%; border: thin solid black; opacity: 25%; margin-bottom: 0;
+}
+#f_p4{
+    margin-top: 2px; opacity: 70%;
 }
 
 
 
 /*About me*/
 .a_main{
-    max-width: 1050px; border: thin dotted skyblue; padding: 20px; margin: 0 auto; font-family: verdana;
+    font-family: verdana; border: thin dotted skyblue;
 }
 .a_para{
     text-align: left;
 }
 .a_other{
-    max-width: 1050px; border: thin dotted skyblue; padding: 20px; margin: 0 auto;
+    border: thin dotted skyblue;
 }
 
 
@@ -124,11 +172,35 @@ footer{
 
 
 @media screen and (max-width: 600px) {
-    .main, .sideBar {
+    .main, .sideBar{
         width: 100%;
     }
     #profile{
         height: 200px; width: 200px;
+    }
+    .content_area{
+        padding: 10px;
+    }
+    #jpUL{
+        padding-left: 20px;
+    }
+    #f_p2{
+        margin-top: 0;
+    }
+    .f_left{
+        width: 65%;
+    }
+    .f_cont{
+        height: 160px; padding-top: 5px;
+    }
+    .f_right{
+        width: 35%;
+    }
+    #f_p3 a:link{
+        display: block;
+    }
+    footer h2{
+        margin-top: 30px;
     }
   }
 @media screen and (max-width: 460px){
@@ -138,6 +210,9 @@ footer{
 }
 
 /*Universal effects and Styles*/
+.content_area{
+    max-width: 1300px; border: thin dotted skyblue; padding: 20px; margin: 0 auto;
+}
 .done{
     font-weight: bold;
 }
