@@ -2,106 +2,78 @@
 <html lang="en">
     <head>
         <title>Nayem's Canvas | Home</title>
-        <link rel="stylesheet" href="/styles.css">
-        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <link rel="icon" href="/assets/favicon.ico">
         <meta charset="UTF-8">
         <meta name="author" content="Nayem Ahmed">
-        <meta name="description" content="Nayem's Canvas">
-        <meta name="keywords" content="nayem, nayem ahmed, portfolio, nayemscanvas, web designer, web developer">
-        <script src="/script.js"></script>
+        <meta name="description" content="Nayem's Canvas is a portfolio website of Nayem Ahmed, a Web Developer.">
+        <meta name="keywords" content="nayem, nayem ahmed, portfolio, nayems canvas, nayemscanvas, nayems space, web designer, web developer, nayems world, nayems website">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+
+    <body>
+        <header id="home">
+            <div id="h_tBox">
+                <h1 id="webName">Nayem's Canvas</h1>
+                <p id="webDetails">A virtual space of Nayem Ahmed</p>
+            </div>
+            <img src="/assets/gallary/mySelf.png" id="webLogo" alt="web-logo.png">
+        </header>
+
+        <nav>
+            <ul>
+                <li> <a href="/index.html" style="font-weight: bold;">Home</a> </li>
+                <li> <a href="/pages/about.html">About</a> </li>
+                <li> <a href="/pages/contact.html">Contact</a> </li>
+                <li> <a href="/pages/blog.html">Blog</a> </li>
+            </ul>
+        </nav>
+
+        <section class="clearfix">
+            <div class="message-box" style="text-align: center;">
+                <h1 style="color: red;">Maintance Break !</h1>
+                <p>This website is under maintance.<br> Coming back soon...</p>
+                <h3>Happy New Year [2024]</h3>
+            </div>
+        </section>
+
+        <footer>
+            <div class="f_container">
+                <div class="f_cont f_left">
+                    <h2>Nayem Ahmed</h2>
+                    <p id="f_p1">
+                        <a href="#home">Top</a> - <a href="/pages/sitemap.html">Sitemap</a> - <a href="/pages/blog.html">Blog</a> <br/>
+                        Feel free to give <a href="/pages/survey.html" style="text-decoration: underline;">Feedback</a>
+                    </p>
+                </div>
+                <div class="f_cont f_right">
+                    <p id="f_p2">
+                        Stay in Touch
+                    </p>
+                    <p id="f_p3">
+                        <a href="/404.html" class="f_links"> <img src="/assets/logos/in.png" alt="in.png" title="Not yet added" class="f_logos"> </a>
+                        <a href="https://instagram.com/nym.ahmed" class="f_links" onclick="leaveFun()" target="_blank"> <img src="/assets/logos/ins.png" alt="ins.png" title="Visit Instragram Profile" class="f_logos"> </a>
+                        <a href="https://www.facebook.com/nayemAhmedz" class="f_links" onclick="leaveFun()" target="_blank"> <img src="/assets/logos/fb.png" alt="fb.png" title="Visit Facebook Profile" class="f_logos"> </a>
+                    </p>
+                </div>
+            </div>
+            <hr id="f_hr" />
+            <p id="f_p4">
+                @Nayem's Canvas | December 2023 | <a href="/pages/versions.html">PF v3.0</a>
+            </p>
+        </footer>
+
+        <script src="/essScript.js"></script>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YVX12HQ51"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
           gtag('config', 'G-9YVX12HQ51');
         </script>
-    </head>
-    
-    <body>
-        <header id="home">
-            <h1>Nayem's Canvas</h1>
-            <img src="/img/mySelf.png" id="logo">
-        </header>
+        <script src="/script.js"></script>
+        <!--Thanks 1-->
 
-        <nav>
-            <a href="/index.html">Home</a>
-            <a href="/pages/aboutMe.html">About</a>
-            <a href="/pages/contact.html">Contact</a>
-            <a href="/pages/blog.html">Blog</a>
-        </nav>
-
-        <section>
-            <h1 style="color: red;">Maintance Break ! </h1>
-            <p style="color: red;">
-                This website is under maintance. I am working on it. Changing the entire website structure and bringing some major changes. Coming up soon... 31/12/23
-            </p>
-            <p>
-                Anyway, happy new Year - 2024
-            </p>
-            <!--
-            <div class="main">
-                <div class="details">
-                    <p style="color: red;">
-                        This website is under construction - 3/12/23
-                    </p>
-                    <img src="/img/mySelf.png" id="profile">
-                    <h1 id="d_h1">Hey! I am Nayem Ahmed</h1>
-                    <p id="d_p1">I am a Web Designer</p>
-                    <p>
-                        <a href="/pages/contact.html" style="font-family: calibri;">Let's talk</a>
-                    </p> <br>
-                    <p>You are warmly welcome to explore my virtual space</p>
-
-                </div>
-            </div>
-            <div class="sideBar">
-                <p style="text-align: center; color: blue;">List of contents</p>
-                    <button onclick="document.location='/pages/mLearning.html'" class="done">What I have Learnt?</button>
-                    <button onclick="document.location='/template.html'" >Personal Life /template</button>
-                    <button onclick="document.location='/pages/myProjects.html'" class="done">My Projects</button>
-                    <button onclick="panelFun()" style="cursor: default; margin: auto;">
-                        <img src="/media/angle2.png" id="angle" alt=">"> Study Life
-                    </button>
-                    <div id="h_panel">
-                        <ul class="panelUl">
-                            <li> <a href="#">School Life</a> </li>
-                            <li> <a href="#">About College</a> </li>
-                            <li> <a href="#">Days after College</a> </li>
-                            <li> <a href="#">University life</a> </li>
-                        </ul>
-                    </div>
-                    <button onclick="document.location=''" style="margin-top: 10px;" disabled>Days in University</button>
-                    <button onclick="document.location='/pages/uniStaff.html'" class="done">University Tasks n Projects</button>
-                    <button onclick="document.location='/pages/details.html'" class="done">How I made this website?</button>
-            </div>
-            -->
-        </section>
-
-        <footer>
-            <div class="f_cont f_left">
-                <h2>Nayem Ahmed</h2>
-                <p id="f_p1">
-                    <a href="#home">Top</a> - <a href="/pages/sitemap.html">Sitemap</a> - <a href="/pages/blog.html">Blog</a> <br/>
-                    Feel free to give <a href="/pages/survey.html" style="text-decoration: underline;">Feedback</a>
-                </p>
-            </div>
-            <div class="f_cont f_right">
-                <p id="f_p2">
-                    Stay in Touch
-                </p>
-                <p id="f_p3">
-                    <a href="/404.html" class="f_link"> <img src="/logos/in.png" alt="in.png" title="Not yet added" class="f_logos"> </a>
-                    <a href="https://instagram.com/nym.ahmed" class="f_link" onclick="leaveFun()" target="_blank"> <img src="/logos/ins.png" alt="ins.png" title="Visit Instragram Profile" class="f_logos"> </a>
-                    <a href="https://www.facebook.com/nayemAhmedz" class="f_link" onclick="leaveFun()" target="_blank"> <img src="/logos/fb.png" alt="fb.png" title="Visit Facebook Profile" class="f_logos"> </a>
-                </p>
-            </div> <hr />
-            <p id="f_p4">
-                @Nayem's Canvas | December 2023 | <a href="/pages/versions.html">PF v2.1</a>
-            </p>
-        </footer> <!--Thanks-->
     </body>
 </html>
