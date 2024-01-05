@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact | Nayem's Canvas</title>
+        <link rel="icon" href="/assets/favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="author" content="Nayem Ahmed">
+        <meta name="description" content="Nayem's Canvas is a portfolio website of Nayem Ahmed, a Web Developer.">
+        <meta name="keywords" content="nayem, nayem ahmed, portfolio, nayems canvas, nayemscanvas, nayems space, web designer, web developer, nayems world, nayems website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="/resources/pagesStyle.css">
+    </head>
+
+    <body>
+        <header id="home">
+            <div id="h_tBox">
+                <h1 id="webName">Nayem's Canvas</h1>
+                <p id="webDetails">A virtual space of Nayem Ahmed</p>
+            </div>
+            <img src="/assets/gallary/mySelf.png" id="webLogo" alt="web-logo.png">
+        </header>
+
+        <nav>
+            <ul>
+                <li> <a href="/index.html">Home</a> </li>
+                <li> <a href="/pages/about.html">About</a> </li>
+                <li> <a href="/pages/contact.html">Contact</a> </li>
+                <li> <a href="/pages/blog.html">Blog</a> </li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="content_area">
+                <div style="margin-top: 10px; opacity: 0.5; text-align: center;">
+                    <h3>Sample Contact Information</h3>
+                    <address>
+                        Name: Nayem Ahmed <br>
+                        Phone: 01701020304 <br>
+                        Email: email@nayemscanvas.xyz <br>
+                        Address: Bhadeshwar, Sylhet
+                    </address>
+                </div>
+                <p style="margin: 10px auto 30px; color: red; opacity: 0.8; text-align: center;">
+                    This is a sample contact details.<br/> But, if you wish you can leave a message for me.<br/> Check the box below:
+                </p>
+                <div class="contact-form" id="contactMe">
+                    <h3 style="font-family: verdana; font-size: 140%; color: blue;">Leave A message to me</h3>
+                    <form action="/pages/sent.html" name="Contact Form" method="post" data-netlify="true" data-netlify-recaptcha="true">
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required="required" class="c_formF">
+                        <input type="email" id="email" name="Email" placeholder="your-email@mail.com" required="required" class="c_formF">
+                        <textarea name="Message" placeholder="How can I help you?" required="required" class="c_formF" rows="4"></textarea>
+                        <div data-netlify-recaptcha="true"></div>
+                        *Ensure the re-Captcha is marked
+                        <p style="text-align: center;">
+                            <input type="reset" value="Clear" class="c_formB">
+                            <input type="submit" value="Send" style="margin-left: 10px; color: green;" class="c_formB">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div style="width: 100%; margin: auto; overflow: auto;">
+                <div class="f_cont f_left">
+                    <h2>Nayem Ahmed</h2>
+                    <p id="f_p1">
+                        <a href="#home">Top</a> - <a href="/pages/sitemap.html">Sitemap</a> - <a href="/pages/blog.html">Blog</a> <br/>
+                        Feel free to give <a href="/pages/survey.html" style="text-decoration: underline;">Feedback</a>
+                    </p>
+                </div>
+                <div class="f_cont f_right">
+                    <p id="f_p2">
+                        Stay in Touch
+                    </p>
+                    <p id="f_p3">
+                        <a href="/404.html" class="f_links"> <img src="/assets/logos/in.png" alt="in.png" title="Not yet added" class="f_logos"> </a>
+                        <a href="https://instagram.com/nym.ahmed" class="f_links" onclick="leaveFun()" target="_blank"> <img src="/assets/logos/ins.png" alt="ins.png" title="Visit Instragram Profile" class="f_logos"> </a>
+                        <a href="https://www.facebook.com/nayemAhmedz" class="f_links" onclick="leaveFun()" target="_blank"> <img src="/assets/logos/fb.png" alt="fb.png" title="Visit Facebook Profile" class="f_logos"> </a>
+                    </p>
+                </div>
+            </div>
+            <hr id="f_hr" />
+            <p id="f_p4">
+                @Nayem's Canvas | December 2023 | <a href="/pages/versions.html">PF v3.0</a>
+            </p>
+        </footer>
+        
+        <script src="/essScript.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YVX12HQ51"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-9YVX12HQ51');
+        </script>
+        <script src="/script.js"></script>
+        <script src="/resources/pagesScript.js"></script>
+        <!--Thanks-->
+
+    </body>
+</html>
