@@ -1,0 +1,27 @@
+/*About Page*/
+.a_main, .a_other{
+    font-family: verdana; border: 1px solid #aaa; padding: 5px;
+}
+.a_other{
+    margin-top: 10px;
+}
+#a_hPanel{
+    display: none; background-color: white; padding: 10px; border-style: none solid solid solid; border-width: 1px; border-color: gray;
+}
+.a_ul1{
+    margin: 0; list-style-type: none; text-align: right;
+}
+.a_ul1 li{
+    padding: 5px; display: inline-block; margin-bottom: 5px;
+}
+.a_ul1 a:link, .panel2Ul a:visited{
+    padding: 5px; background-color: skyblue; color: black; border-radius: 10px; text-decoration: none;
+}
+.a_ul1 a:hover{
+    background-color: black; color: white;
+}
+
+/*Blog*/
+.bVisit{
+    background-color: blue; color: white; border-radius: 15px;padding: 7px; text-decoration: none; display: inline-block;
+}
