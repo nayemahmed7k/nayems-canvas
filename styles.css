@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+}
+/* Home Page */
+body{
+    margin: 0;
+}
+header{
+    background-color: black; overflow: auto; padding: 10px;
+}
+header #h_tBox{
+    float: left; text-align: center; color: white;
+}
+header h1{
+    font-family: verdana; margin: 8px 5px; font-size: 250%;
+}
+header p{
+    font-family: verdana; margin: 8px 5px;
+}
+header img{
+    height: 65px; width: 65px; border-radius: 50%; float: right; margin: 10px 10px 10px auto;
+}
+
+/* Navigation menue*/
+nav{
+    background-color: gray; text-align: center;
+}
+nav ul{
+    list-style-type: none; margin: 0; padding: 0;
+}
+nav ul li{
+    display: inline-block; margin: 10px 5px;
+}
+nav ul li a:link, nav ul li a:visited{
+    text-decoration: none; font-family: arial; color: #eee; padding: 6px; border-radius: 10px;
+}
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.5); color: white;
+}
+nav ul li a:active{
+    background-color: black;
+}
+
+
+/*Home && Pages Sections*/
+section{
+    min-height: 600px; padding: 10px; margin: auto; background-color: #eee; border: 1px solid red;
+}
+
+/*Section's Main*/
+main{
+    width: 75%; border: 1px solid blue; float: right; text-align: center;
+}
+#webProfile{
+    height: 250px; width: 250px; border-radius: 50%; margin-top: 70px;
+}
+
+/*Section's sidebar*/
+aside{
+    width: 25%; float: left; border: 1px solid red; padding: 20px;
+}
+aside button{
+    display: block; margin: 8px 5px; padding: 5px; width: 90%; border-left: 7px solid blue; border-style: solid;
+}
+
+
+/*Footer Section*/
+footer{
+    background-color: gray; overflow: auto; box-sizing: border-box;
+}
+.f_container{
+    width: 100%; margin: auto; overflow: auto;
+}
+.f_cont{
+    width: 49%; margin: auto; text-align: center;
+}
+.f_cont h2{
+    margin: 10px auto 0; font-size: 170%; font-family: verdana; color: #eee; text-shadow: 0 0 5px black;
+}
+#f_p1 a:link, #f_p1 a:visited{
+    text-decoration: none;
+}
+.f_left{
+    float: left; border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.f_right{
+    float: right;
+}
+.f_links{
+    text-decoration: none;
+}
+.f_logos{
+    width: 33px;
+}
+#f_p4{
+    text-align: center; opacity: 75%; margin-top: 5px;
+}
+#f_hr{
+    width: 80%; border: 1px solid black; opacity: 30%; margin: 2px auto;
+}
+
+/*Error Page */
+.backToNc a:link, .backToNc a:visited{
+    margin: 5px; padding: 5px; background-color: black; color: white; border-radius: 10px; text-decoration: none;
+}
+.backToNc a:hover{
+    background-color: blue;
+}
+
+/*Contact form / any */
+.contact-form{
+    max-width: 400px; padding: 20px; background-color: skyblue; border-radius: 15px; margin: 5px auto 100px; text-align: center; box-shadow: 0 0 5px blue;
+}
+.c_formF{
+    display: block; width: 250px; margin: 15px auto; padding: 8px; border-radius: 10px; border: none; font-family: verdana;
+}
+.c_formB{
+    padding: 2px 7px;
+}
+
+/*Survey form*/
+
+
+
+/*Universal styles*/
+.content-area{
+    max-width: 1400px; border: 1px solid gray; padding: 10px; margin: auto;
+}
+.message-box{
+    width: 310px; margin: 120px auto 5px; padding: 15px;  border-radius: 15px; font-family: calibri; box-shadow: 0 0 10px tomato; background-color: white;
+}
+.txt-center{
+    text-align: center;
+}
+.font-verdana{
+    font-family: verdana;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*media screen**/
+@media screen and (max-width: 600px){
+    section, .content_area, header{
+        padding: 5px;
+    }
+    #webLogo{
+        height: 50px; width: 50px; margin: 20px 5px;
+    }
+    main, aside{
+        width: 100%; float: none;
+    }
+    footer{
+        padding: 0;
+    }
+    .f_cont{
+        margin: 0;
+    }
+    .f_left{
+        width: 82%; margin: 15px 0 0 8px; box-shadow: 0 0 5px #eee;
+    }
+    .f_right{
+        width: 15%;
+    }
+    #f_p2{
+        display: none;
+    }
+    .f_logos{
+        display: block; margin: 0 auto 8px;
+    }
+    #f_p3{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 460px){
+    #webName{
+        font-size: 200%;
+    }
+    #webLogo{
+        height: 45px; width: 45px;
+    }
+    .contact-form{
+        margin: 5px 10px 100px; padding: 5px;
+    }
+}
+@media screen and (max-width: 375px){
+    #webName, #webDetails{
+        margin: 8px 0;
+    }
+    .contact-form{
+        margin: 5px 5px 100px;
+    }
+}
