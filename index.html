@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <header id="home">
+        <header id="home" class="clearfix">
             <div id="h_tBox">
                 <h1 id="webName">Nayem's Canvas</h1>
                 <p id="webDetails">A virtual space of Nayem Ahmed</p>
@@ -22,7 +22,7 @@
 
         <nav>
             <ul>
-                <li> <a href="/index.html" style="font-weight: bold;">Home</a> </li>
+                <li> <a href="/index.html" class="active">Home</a> </li>
                 <li> <a href="/pages/about.html">About</a> </li>
                 <li> <a href="/pages/contact.html">Contact</a> </li>
                 <li> <a href="/pages/blog.html">Blog</a> </li>
@@ -30,11 +30,43 @@
         </nav>
 
         <section class="clearfix">
-            <div class="message-box" style="text-align: center;">
-                <h1 style="color: red;">Maintance Break !</h1>
-                <p>This website is under maintance.<br> Coming back soon...</p>
-                <h3>Happy New Year [2024]</h3>
-            </div>
+            <main>
+                <div id="details">
+                    <img src="/assets/gallary/mySelf.png" alt="mySelf.png" title="Picture of Nayem Ahmed" id="webProfile">
+                    <p id="d-hey">Hey! I am</p>
+                    <h1 id="d-h1">Nayem Ahmed</h1>
+                    <h3 id="d-h3">I am a Web Developer</h3>
+                    <p>
+                        <a href="/pages/contact.html">Let's Talk</a>
+                    </p>
+                    <p>
+                        You're warmly welcome to explore my virtual space
+                    </p>
+                </div>
+            </main>
+            <aside>
+                <div id="h_aside">
+                    <p style="text-align: center; font-family: calibri; font-weight: bold;">Have a look at</p>
+
+                    <button onclick="document.location='/practices/tasks.html'">What I have learnt?</button>
+                    <button onclick="document.location='/template.html'">Personal Life/ Template</button>
+                    <button onclick="document.location='/projects/lists.html'">My Project</button>
+                    <button onclick="showStudyF()" id="showStudy">
+                        Study Life
+                        <div id="h_panel1">
+                            <ul id="h_ul2">
+                                <li> <a href="#">School Life</a> </li>
+                                <li> <a href="#">About College</a> </li>
+                                <li> <a href="#">Days after College</a> </li>
+                                <li> <a href="#">University life</a> </li>
+                            </ul>
+                        </div>
+                    </button>
+                    <button onclick="document.location='/pages/sample.html'">Days in University</button>
+                    <button onclick="">University Projects and Tasks</button>
+                    <button onclick="">How I made this website?</button>
+                </div>
+            </aside>
         </section>
 
         <footer>
@@ -73,7 +105,7 @@
           gtag('config', 'G-9YVX12HQ51');
         </script>
         <script src="/script.js"></script>
-        <!--Thanks 1-->
+        <!--Thanks 1.1-->
 
     </body>
 </html>
