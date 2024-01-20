@@ -1,0 +1,55 @@
+/* Practice : Tasks Styles */
+#ml-box1{
+    text-align: center;
+}
+#ml-box1 > table{
+    width: 90%; max-width: 340px; border: 1px solid gray; border-collapse: collapse; margin: auto; text-align: center;
+}
+#ml-box1 > table th, #ml-box1 > table td{
+    border: 1px solid gray; padding: 5px;
+}
+
+#tasks_ul1 li{
+    margin: 4px auto auto 16px;
+}
+
+#ml-box3{
+    padding: 20px; max-width: 1100px; margin: auto;
+}
+.ml-cont{
+    width: 33.33%; float: left;
+}
+#ml-cont1, #ml-cont2, #ml-cont3{
+    margin: 5px; border: 1px solid red; border-radius: 15px; padding: 5px; text-align: center;
+}
+.tasks_ul2{
+    text-align: left; list-style-type: circle;
+}
+.tasks_ul2 li{
+    margin-bottom: 7px;
+}
+.tasks_ul2 li a:link, .tasks_ul2 li a:active{
+    text-decoration: none; color: blue;
+}
+.tasks_ul2 li a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px){
+    #ml-box3{
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 600px){
+    #ml-box3{
+        padding: 5px;
+    }
+    .ml-cont{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px){
+    #ml-box1{
+        text-align: left;
+    }
+}
