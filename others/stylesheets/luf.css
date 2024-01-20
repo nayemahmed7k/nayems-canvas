@@ -1,0 +1,79 @@
+/* Page : Layout Using Float */
+#luf-nav{
+    background-color: black;
+}
+#luf-ul{
+    list-style-type: none; margin: 0; padding: 0; overflow: auto;
+}
+#luf-ul li{
+    float: left;
+}
+#luf-ul li a:link, #luf-ul li a:visited{
+    display: inline-block; color: white; padding: 10px 5px; text-decoration: none;
+}
+#luf-ul li a:hover{
+    background-color: blue;
+}
+#luf-active{
+    background-color: red;
+}
+#luf-h{
+    background-color: #eee; padding: 10px;
+}
+#luf-h h1{
+    text-shadow: 0 0 5px gray;
+}
+.luf-container{
+    margin: 20px 0 60px;
+}
+.luf-column{
+    float: left;
+}
+.luf-menue{
+    width: 25%; border: 1px solid #eee; padding: 5px;
+}
+.luf-menue p{
+    position: relative; left: 20%;
+}
+.luf-menue-lists{
+    list-style-type: none; margin-top: 60px; padding: 0; text-align: center;
+}
+.luf-menue-lists li{
+    padding: 5px; margin: 15px 12px;
+}
+.luf-menue-lists li:nth-child(even){
+    background-color: #aae;
+}
+.luf-menue-lists li:nth-child(odd){
+    background-color: #bbb;
+}
+.luf-menue-lists li:hover{
+    background-color: blue; color: white;
+}
+.luf-content{
+    width: 75%; padding: 5px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+.luf-article{
+    margin-left: 50px;
+}
+.luf-container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+#luf-footer{
+    background-color: gray; color: black; overflow: auto;
+}
+#luf-footer p{
+    text-align: center;
+}
+
+/* Media Screens*/
+@media screen and (max-width: 600px){
+    .luf-menue{
+        padding: 0;
+    }
+    .luf-article{
+        margin: 5px;
+    }               
+}
