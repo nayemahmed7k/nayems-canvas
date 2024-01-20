@@ -6,62 +6,102 @@ body{
     margin: 0;
 }
 header{
-    background-color: black; overflow: auto; padding: 10px;
+    background-color: black; padding: 10px; overflow: auto;
 }
-header #h_tBox{
-    float: left; text-align: center; color: white;
+#h_tBox{
+    float: left; color: #eee; text-shadow: 0 0 7px blue, 0 0 10px red;
 }
-header h1{
-    font-family: verdana; margin: 8px 5px; font-size: 250%;
+#webName{
+    font-family: verdana; font-size: 38px; margin: 8px auto;
 }
-header p{
-    font-family: verdana; margin: 8px 5px;
+#webDetails{
+    text-align: center; font-family: calibri;
 }
-header img{
-    height: 65px; width: 65px; border-radius: 50%; float: right; margin: 10px 10px 10px auto;
+#webLogo{
+    height: 70px; width: 70px; border-radius: 50%; margin-top: 20px; margin-right: 2px; float: right; opacity: 0.8;
 }
 
 /* Navigation menue*/
 nav{
-    background-color: gray; text-align: center;
+    padding: 7px; background-color: #ccc;
 }
 nav ul{
-    list-style-type: none; margin: 0; padding: 0;
+    list-style-type: none; margin: 0; padding: 0; overflow: auto;
 }
 nav ul li{
-    display: inline-block; margin: 10px 5px;
+    float: right;
 }
-nav ul li a:link, nav ul li a:visited{
-    text-decoration: none; font-family: arial; color: #eee; padding: 6px; border-radius: 10px;
+nav a:link, nav a:visited{
+    display: inline-block; padding: 5px 10px; text-decoration: none; color: black; font-family: arial; border-radius: 10px;
 }
-nav ul li a:hover{
-    background-color: rgba(0, 0, 0, 0.5); color: white;
+nav a:hover:not(.active){
+    background-color: rgba(0, 0, 0, 0.8); color: white;
 }
-nav ul li a:active{
-    background-color: black;
+nav a:active{
+    color: red;
+}
+nav a.active{
+    font-weight: bold;
 }
 
 
 /*Home && Pages Sections*/
 section{
-    min-height: 600px; padding: 10px; margin: auto; background-color: #eee; border: 1px solid red;
+    min-height: 600px; padding: 10px; margin: auto; background-color: #eee; border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 /*Section's Main*/
 main{
-    width: 75%; border: 1px solid blue; float: right; text-align: center;
+    width: 75%; float: right; text-align: center;
+}
+main #details{
+    margin: auto auto 90px 10px; padding: 90px 5px; border: 1px solid #bce;
 }
 #webProfile{
-    height: 250px; width: 250px; border-radius: 50%; margin-top: 70px;
+    height: 250px; width: 250px; border-radius: 50%;
+}
+#d-hey{
+    margin: 20px auto 0; color: rgba(0, 0, 0, 0.7); font-size: 20px;
+}
+#d-h1{
+    font-family: calibri; font-variant: small-caps; font-size: 40px; margin: 0 auto 10px; color: black; text-shadow: 0 0 5px coral;
+}
+#d-h3{
+    margin: 5px auto 40px; color: rgba(0, 0, 0, 0.9);
 }
 
 /*Section's sidebar*/
 aside{
-    width: 25%; float: left; border: 1px solid red; padding: 20px;
+    width: 25%; float: left;
 }
-aside button{
-    display: block; margin: 8px 5px; padding: 5px; width: 90%; border-left: 7px solid blue; border-style: solid;
+#h_aside{
+    max-width: 230px; margin: 100px auto 20px;
 }
+#h_aside button{
+    display: block; margin-bottom: 8px; width: 100%; padding: 5px; border: 1px solid gray; border-radius: 10px; cursor: pointer;
+}
+#h_aside button:hover{
+    background-color: rgba(0, 0, 0, 0.8); color: white;
+}
+#h_panel1{
+    display:none; margin-top: 5px; padding: 5px; background-color: #eee; border: 1px solid #abc; border-radius: 15px;
+}
+#showStudy:hover #h_panel1{
+    display: block;
+}
+#h_ul2{
+    list-style-type: none; margin: 0; padding: 0;
+}
+#h_ul2 li{
+    padding: 5px;
+}
+#h_ul2 li a:link, #h_ul2 li a:visited{
+    padding: 5px; text-decoration: none; border-radius: 5px; color: blue;
+}
+#h_ul2 li a:hover{
+    background-color: gray; color: white;
+}
+
 
 
 /*Footer Section*/
@@ -124,7 +164,7 @@ footer{
 
 /*Universal styles*/
 .content-area{
-    max-width: 1400px; border: 1px solid gray; padding: 10px; margin: auto;
+    max-width: 1400px; padding: 10px; margin: auto;
 }
 .message-box{
     width: 310px; margin: 120px auto 5px; padding: 15px;  border-radius: 15px; font-family: calibri; box-shadow: 0 0 10px tomato; background-color: white;
@@ -147,11 +187,20 @@ footer{
     section, .content_area, header{
         padding: 5px;
     }
+    #webName{
+        font-size: 32px;
+    }
     #webLogo{
-        height: 50px; width: 50px; margin: 20px 5px;
+        height: 55px; width: 55px;
     }
     main, aside{
         width: 100%; float: none;
+    }
+    main #details{
+        margin: auto; border-style: none none solid none;
+    }
+    #h_aside{
+        max-width: 80%; margin: 20px auto 20px;
     }
     footer{
         padding: 0;
@@ -176,19 +225,16 @@ footer{
     }
 }
 @media screen and (max-width: 460px){
-    #webName{
-        font-size: 200%;
-    }
-    #webLogo{
-        height: 45px; width: 45px;
-    }
     .contact-form{
         margin: 5px 10px 100px; padding: 5px;
     }
 }
 @media screen and (max-width: 375px){
-    #webName, #webDetails{
-        margin: 8px 0;
+    #webName{
+        font-size: 30px;
+    }
+    #webLogo{
+        height: 45px; width: 45px;
     }
     .contact-form{
         margin: 5px 5px 100px;
