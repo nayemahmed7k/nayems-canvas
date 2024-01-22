@@ -35,6 +35,21 @@ function color(sw){
         green.style.color = "black";
     }
 }
+var lightFrame = document.getElementById('light-frame');
+var On = document.getElementById('lightOn');
+var Off = document.getElementById('lightOff');
+function lightF(lw){
+    if(lw==1){
+        lightFrame.src = "/assets/media/light_on.png";
+        On.style.color = "green";
+        Off.style.color = "black";
+    }
+    else if(lw==0){
+        lightFrame.src = "/assets/media/light_off.png";
+        On.style.color = "black";
+        Off.style.color = "red";
+    }
+}
 var Hide = 0;
 function hideF(){
     var c = document.getElementById('hJs-p6');
