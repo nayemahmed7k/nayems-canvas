@@ -117,11 +117,14 @@ footer{
 .f_cont h2{
     margin: 10px auto 0; font-size: 170%; font-family: verdana; color: #eee; text-shadow: 0 0 5px black;
 }
-#f_p1 a:link, #f_p1 a:visited{
-    text-decoration: none;
-}
 .f_left{
     float: left; border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.f_left a:link, .f_left a:visited, #f_last{
+    color: blue; text-decoration: none;
+}
+.f_left a:hover, #f_last:hover{
+    color: white;
 }
 .f_right{
     float: right;
@@ -133,7 +136,7 @@ footer{
     width: 33px;
 }
 #f_p4{
-    text-align: center; opacity: 75%; margin-top: 5px;
+    text-align: center; opacity: 85%; margin-top: 5px;
 }
 #f_hr{
     width: 80%; border: 1px solid black; opacity: 30%; margin: 2px auto;
