@@ -1,0 +1,42 @@
+.container{
+    max-width: 600px; margin: 60px auto; padding: 10px 20px; border-radius: 10px; background-color: #eee;
+}
+#regi{
+    font-size: 24px; font-family: arial; text-align: center;
+}
+.col1{
+    width: 25%; float: left; margin-top: 8px; text-align: right;
+}
+.col2{
+    width: 75%; float: left; margin-top: 8px;
+}
+.col1 label{
+    display: inline-block; padding: 6px 15px 7px 0;
+}
+.col2 > input, .col2 > select{
+    padding: 7px; width: 100%; border: 1px solid gray; border-radius: 5px;
+}
+.col2 > input:focus, .col2 > select:focus{
+    outline: 1px solid blue;
+}
+.col2 input[type=radio]{
+    width: auto; vertical-align: middle; margin: 10px auto;
+}
+.col2 label{
+    margin-right: 5px;
+}
+input[type=button]{
+    float: right; margin: 20px auto; padding: 7px 15px;
+}
+.row::after{
+    content: ""; clear: both; display: table;
+}
+
+@media screen and (max-width: 480px){
+    .col1, .col2{
+        width: 100%; margin-top: 0;
+    }
+    .col1{
+        text-align: left;
+    }
+}
