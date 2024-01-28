@@ -7,7 +7,7 @@ var Country = document.getElementById('res-country');
 function showOutput(){
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
-    var gender = document.querySelector('input[name="Gender"]:checked').value;
+    var gender = document.querySelector('input[name="gender"]:checked').value;
     var psw = document.getElementById('psw').value;
     var country = document.getElementById('country').value;
 
