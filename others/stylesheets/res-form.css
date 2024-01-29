@@ -25,11 +25,29 @@
 .col2 label{
     margin-right: 5px;
 }
+#warning{
+    margin: 7px auto; color: #eee;
+}
 input[type=button]{
-    float: right; margin: 20px auto; padding: 7px 15px;
+    float: right; padding: 7px 15px; border-radius: 8px; border: 1px solid blue; 
 }
 .row::after{
     content: ""; clear: both; display: table;
+}
+#result{
+    max-width: 500px; margin: 20px auto; overflow-x: auto;
+}
+#res-table{
+    width: 100%; border: 1px solid #ccc; border-radius: 10px; padding: 5px;
+}
+#res-table td{
+    padding: 5px;
+}
+#res-table td:nth-child(odd){
+    color: gray; text-align: right;
+}
+#show-form{
+    text-align: center; margin-top: 25px; visibility: hidden;
 }
 
 @media screen and (max-width: 480px){
