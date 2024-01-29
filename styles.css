@@ -155,7 +155,10 @@ footer{
     max-width: 400px; padding: 20px; background-color: skyblue; border-radius: 15px; margin: 5px auto 100px; text-align: center; box-shadow: 0 0 5px blue;
 }
 .c_formF{
-    display: block; width: 250px; margin: 15px auto; padding: 8px; border-radius: 10px; border: none; font-family: verdana;
+    display: block; width: 250px; margin: 15px auto; padding: 8px; border-radius: 10px; border: 1px solid #abc; font-family: verdana; outline: none;
+}
+.c_formF:focus{
+    outline: 1px solid black;
 }
 .c_formB{
     padding: 2px 7px;
