@@ -1,248 +1,44 @@
 *{
     box-sizing: border-box;
 }
-/* Home Page */
 body{
-    margin: 0;
-}
-header{
-    background-color: black; padding: 10px; overflow: auto;
-}
-#h_tBox{
-    float: left; color: #eee; text-shadow: 0 0 7px blue, 0 0 10px red;
-}
-#webName{
-    font-family: verdana; font-size: 38px; margin: 8px auto;
-}
-#webDetails{
-    text-align: center; font-family: calibri;
-}
-#webLogo{
-    height: 70px; width: 70px; border-radius: 50%; margin-top: 20px; margin-right: 2px; float: right; opacity: 0.8;
+    margin: 0; min-height: 100vh;
 }
 
-/* Navigation menue*/
-nav{
-    padding: 7px; background-color: #ccc;
+/* Header Section */
+header{
+    display: flex; justify-content: space-between; align-items: center; padding: 10px; background-color: #eee;
 }
+.header-left{
+    display: flex; align-items: center; width: fit-content;
+}
+.header-logo{
+    width: 120px; height: auto;
+}
+.header-left > h1{
+    display: inline-block;
+}
+
+/* Header : Nav */
 nav ul{
-    list-style-type: none; margin: 0; padding: 0; overflow: auto;
+    list-style-type: none;
 }
 nav ul li{
-    float: right;
+    display: inline-block;
 }
-nav a:link, nav a:visited{
-    display: inline-block; padding: 5px 10px; text-decoration: none; color: black; font-family: arial; border-radius: 10px;
+nav ul li a:link, nav ul li a:visited{
+    display: block; text-decoration: none; padding: 5px 10px;
 }
-nav a:hover:not(.active){
-    background-color: rgba(0, 0, 0, 0.8); color: white;
-}
-nav a:active{
-    color: red;
-}
-nav a.active{
-    font-weight: bold;
-}
-
-
-/*Home && Pages Sections*/
-section{
-    min-height: 600px; padding: 10px; margin: auto; background-color: #eee; border: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-/*Section's Main*/
-main{
-    width: 75%; float: right; text-align: center;
-}
-main #details{
-    margin: auto auto 90px 10px; padding: 90px 5px; border: 1px solid #bce;
-}
-#webProfile{
-    height: 250px; width: 250px; border-radius: 50%;
-}
-#d-hey{
-    margin: 20px auto 0; color: rgba(0, 0, 0, 0.7); font-size: 20px;
-}
-#d-h1{
-    font-family: calibri; font-variant: small-caps; font-size: 40px; margin: 0 auto 10px; color: black; text-shadow: 0 0 5px coral;
-}
-#d-h3{
-    margin: 5px auto 40px; color: rgba(0, 0, 0, 0.9);
-}
-
-/*Section's sidebar*/
-aside{
-    width: 25%; float: left;
-}
-#h_aside{
-    max-width: 230px; margin: 100px auto 20px;
-}
-#h_aside button{
-    display: block; margin-bottom: 8px; width: 100%; padding: 5px; border: 1px solid gray; border-radius: 10px; cursor: pointer;
-}
-#h_aside button:hover{
-    background-color: rgba(0, 0, 0, 0.8); color: white;
-}
-#h_panel1{
-    display:none; margin-top: 5px; padding: 5px; background-color: #eee; border: 1px solid #abc; border-radius: 15px;
-}
-#showStudy:hover #h_panel1{
-    display: block;
-}
-#h_ul2{
-    list-style-type: none; margin: 0; padding: 0;
-}
-#h_ul2 li{
-    padding: 5px;
-}
-#h_ul2 li a:link, #h_ul2 li a:visited{
-    padding: 5px; text-decoration: none; border-radius: 5px; color: blue;
-}
-#h_ul2 li a:hover{
-    background-color: gray; color: white;
+nav ul li a:hover{
+    background-color: blue; color: white;
 }
 
 
 
-/*Footer Section*/
-footer{
-    background-color: gray; overflow: auto; box-sizing: border-box;
-}
-.f_container{
-    width: 100%; margin: auto; overflow: auto;
-}
-.f_cont{
-    width: 49%; margin: auto; text-align: center;
-}
-.f_cont h2{
-    margin: 10px auto 0; font-size: 170%; font-family: verdana; color: #eee; text-shadow: 0 0 5px black;
-}
-.f_left{
-    float: left; border-right: 1px solid rgba(0, 0, 0, 0.2);
-}
-.f_left a:link, .f_left a:visited, #f_last{
-    color: blue; text-decoration: none;
-}
-.f_left a:hover, #f_last:hover{
-    color: white;
-}
-.f_right{
-    float: right;
-}
-.f_links{
-    text-decoration: none;
-}
-.f_logos{
-    width: 33px;
-}
-#f_p4{
-    text-align: center; opacity: 85%; margin-top: 5px;
-}
-#f_hr{
-    width: 80%; border: 1px solid black; opacity: 30%; margin: 2px auto;
-}
 
-/*Error Page */
-.backToNc a:link, .backToNc a:visited{
-    margin: 5px; padding: 5px; background-color: black; color: white; border-radius: 10px; text-decoration: none;
-}
-.backToNc a:hover{
-    background-color: blue;
-}
-
-/*Contact form / any */
-.contact-form{
-    max-width: 400px; padding: 20px; background-color: skyblue; border-radius: 15px; margin: 5px auto 100px; text-align: center; box-shadow: 0 0 5px blue;
-}
-.c_formF{
-    display: block; width: 250px; margin: 15px auto; padding: 8px; border-radius: 10px; border: 1px solid #abc; font-family: verdana; outline: none;
-}
-.c_formF:focus{
-    outline: 1px solid black;
-}
-.c_formB{
-    padding: 2px 7px;
-}
-
-/*Survey form*/
-
-
-
-/*Universal styles*/
-.content-area{
-    max-width: 1400px; padding: 10px; margin: auto;
-}
-.message-box{
-    width: 310px; margin: 120px auto 5px; padding: 15px;  border-radius: 15px; font-family: calibri; box-shadow: 0 0 10px tomato; background-color: white;
-}
-.txt-center{
-    text-align: center;
-}
-.font-verdana{
-    font-family: verdana;
-}
-.clearfix::after{
-    content: "";
-    clear: both;
-    display: table;
-}
-
-
-/*media screen**/
-@media screen and (max-width: 600px){
-    section, .content_area, header{
-        padding: 5px;
-    }
-    #webName{
-        font-size: 32px;
-    }
-    #webLogo{
-        height: 55px; width: 55px;
-    }
-    main, aside{
-        width: 100%; float: none;
-    }
-    main #details{
-        margin: auto; border-style: none none solid none;
-    }
-    #h_aside{
-        max-width: 80%; margin: 20px auto 20px;
-    }
-    footer{
-        padding: 0;
-    }
-    .f_cont{
-        margin: 0;
-    }
-    .f_left{
-        width: 82%; margin: 15px 0 0 8px; box-shadow: 0 0 5px #eee;
-    }
-    .f_right{
-        width: 15%;
-    }
-    #f_p2{
-        display: none;
-    }
-    .f_logos{
-        display: block; margin: 0 auto 8px;
-    }
-    #f_p3{
-        margin-top: 10px;
-    }
-}
-@media screen and (max-width: 460px){
-    .contact-form{
-        margin: 5px 10px 100px; padding: 5px;
-    }
-}
-@media screen and (max-width: 375px){
-    #webName{
-        font-size: 30px;
-    }
-    #webLogo{
-        height: 45px; width: 45px;
-    }
-    .contact-form{
-        margin: 5px 5px 100px;
+/* Media Screen */
+@media screen and (min-width: 1441px){
+    .p-lg{
+        padding-left: 200px; padding-right: 200px;
     }
 }
